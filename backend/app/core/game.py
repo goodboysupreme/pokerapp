@@ -1,12 +1,15 @@
 from __future__ import annotations
 
 import asyncio
+import time
 from enum import Enum
 from typing import Dict, List, Optional, Callable, Awaitable
 from dataclasses import dataclass, field
 
 from app.core.deck import Deck, Card
 from app.core.evaluator import evaluate_hand, hand_name
+
+TURN_SECONDS = 30  # seconds per turn
 
 
 class Phase(str, Enum):
@@ -69,6 +72,8 @@ class GameState:
     round_action_count: int = 0
     last_raiser_idx: Optional[int] = None
     winners: Optional[List[dict]] = None
+    turn_started_at: float = field(default_factory=time.time)
+    _timer_task: Optional[asyncio.Task] = field(default=None, repr=False)
 
     # Callback for broadcasting state
     broadcast: Optional[Callable[[str, dict], Awaitable[None]]] = None
@@ -102,6 +107,13 @@ class GameState:
             return None
         return self.players[self.player_order[self.current_player_idx % len(self.player_order)]]
 
+    @property
+    def turn_time_remaining(self) -> int:
+        if self.phase in (Phase.WAITING, Phase.SHOWDOWN):
+            return TURN_SECONDS
+        elapsed = time.time() - self.turn_started_at
+        return max(0, TURN_SECONDS - int(elapsed))
+
     def _next_active_idx(self, from_idx: int) -> int:
         n = len(self.player_order)
         for i in range(1, n + 1):
@@ -111,7 +123,26 @@ class GameState:
                 return idx
         return from_idx
 
+    def _reset_turn_timer(self):
+        self.turn_started_at = time.time()
+        if self._timer_task and not self._timer_task.done():
+            self._timer_task.cancel()
+        self._timer_task = asyncio.create_task(self._turn_timeout())
+
+    def _cancel_timer(self):
+        if self._timer_task and not self._timer_task.done():
+            self._timer_task.cancel()
+            self._timer_task = None
+
+    async def _turn_timeout(self):
+        """Auto-fold current player after TURN_SECONDS."""
+        await asyncio.sleep(TURN_SECONDS)
+        cp = self.current_player
+        if cp and not cp.folded and self.phase not in (Phase.WAITING, Phase.SHOWDOWN):
+            await self.handle_action(cp.id, Action.FOLD)
+
     async def start_hand(self):
+        self._cancel_timer()
         if len([p for p in self.players.values() if p.is_connected]) < 2:
             return
 
@@ -170,6 +201,7 @@ class GameState:
         self.current_player_idx = self._next_active_idx(bb_idx)
         self.last_raiser_idx = bb_idx
 
+        self._reset_turn_timer()
         await self._broadcast_state()
 
     async def handle_action(self, player_id: str, action: Action, amount: int = 0):
@@ -181,12 +213,14 @@ class GameState:
         if not current or current.id != player_id:
             return
 
+        self._cancel_timer()
+
         if action == Action.FOLD:
             player.folded = True
 
         elif action == Action.CHECK:
             if self.current_bet > player.current_bet:
-                return  # Can't check if there's a bet to match
+                return
 
         elif action == Action.CALL:
             call_amount = min(self.current_bet - player.current_bet, player.chips)
@@ -237,10 +271,8 @@ class GameState:
             await self.start_hand()
             return
 
-        # Move to next player or next phase
         next_idx = self._next_active_idx(self.current_player_idx)
 
-        # Check if betting round is complete
         can_act = [p for p in self.active_players if not p.all_in]
         all_matched = all(p.current_bet == self.current_bet or p.all_in for p in self.non_folded_players)
 
@@ -248,10 +280,11 @@ class GameState:
             await self._next_phase()
         else:
             self.current_player_idx = next_idx
+            self._reset_turn_timer()
             await self._broadcast_state()
 
     async def _next_phase(self):
-        # Reset bets for new round
+        self._cancel_timer()
         for p in self.players.values():
             p.current_bet = 0
         self.current_bet = 0
@@ -271,10 +304,8 @@ class GameState:
             await self._showdown()
             return
 
-        # Check if all remaining players are all-in
         can_act = [p for p in self.non_folded_players if not p.all_in]
         if len(can_act) <= 1:
-            # Run out remaining community cards
             while len(self.community_cards) < 5:
                 if self.phase == Phase.FLOP:
                     self.community_cards += self.deck.deal(1)
@@ -290,9 +321,11 @@ class GameState:
             return
 
         self.current_player_idx = self._next_active_idx(self.dealer_idx)
+        self._reset_turn_timer()
         await self._broadcast_state()
 
     async def _showdown(self):
+        self._cancel_timer()
         self.phase = Phase.SHOWDOWN
         non_folded = self.non_folded_players
 
@@ -303,7 +336,6 @@ class GameState:
 
         results.sort(key=lambda x: x[1], reverse=True)
 
-        # Find winners (could be ties)
         best_score = results[0][1]
         winners = [r for r in results if r[1] == best_score]
 
@@ -341,6 +373,10 @@ class GameState:
             "players": players_data,
             "winners": self.winners,
             "your_id": player_id,
+            "turn_time_remaining": self.turn_time_remaining,
+            "turn_seconds": TURN_SECONDS,
+            "small_blind": self.small_blind,
+            "big_blind": self.big_blind,
         }
 
     async def _broadcast_state(self):
