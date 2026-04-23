@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 21 — Measuring National Output and National Income</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">ECON F211</a>
+    <ul class="nav-links">
+      <li><a href="ch16.html">Ch 16</a></li>
+      <li><a href="ch19.html">Ch 19</a></li>
+      <li><a href="ch20.html">Ch 20</a></li>
+      <li><a href="ch21.html" class="active">Ch 21</a></li>
+      <li><a href="final-quiz.html">Final Quiz</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <header class="ch-hero">
+    <div class="chapter-num">Chapter 21</div>
+    <h1>Measuring National Output and National Income</h1>
+    <p>GDP — what it counts, what it doesn't, and how we adjust it for price changes to track real economic progress.</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#gdp-def">Gross Domestic Product: Definition</a></li>
+      <li><a href="#gdp-rules">What GDP Does and Doesn't Count</a></li>
+      <li><a href="#expenditure">Expenditure Approach: C + I + G + NX</a></li>
+      <li><a href="#income-approach">Income Approach</a></li>
+      <li><a href="#income-chain">From GDP to Disposable Income</a></li>
+      <li><a href="#nominal-real">Nominal vs. Real GDP</a></li>
+      <li><a href="#deflator">The GDP Deflator</a></li>
+      <li><a href="#limitations">Limitations of GDP</a></li>
+      <li><a href="#terms21">Key Terms</a></li>
+      <li><a href="#quiz21">Chapter Quiz</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. GDP DEFINITION -->
+  <section class="content-section" id="gdp-def">
+    <h2>1 · Gross Domestic Product: Definition</h2>
+
+    <p><strong>Gross Domestic Product (GDP)</strong> is the total market value of all <em>final</em> goods and services produced within a given period by factors of production <em>located within a country</em>.</p>
+
+    <p>GDP is "the economic report card of a nation" — the single most important summary measure of an economy's output. U.S. GDP in 2014 was <strong>$17,418.9 billion</strong>.</p>
+
+    <p>The national income and product accounts, compiled by the Bureau of Economic Analysis (BEA), have been called one of the great inventions of the 20th century. Before them, policymakers navigated the Great Depression using only stock price indices, freight car loadings, and incomplete industrial production indices.</p>
+
+    <div class="callout insight">
+      <div class="callout-label">GDP vs. GNP</div>
+      <strong>GDP</strong> counts output produced within a country's borders, regardless of who owns the factors. <strong>GNP</strong> counts output produced by a country's citizens, regardless of where production occurs.<br><br>
+      Honda plant in Ohio: profits count in Japanese GNP (Japanese capital) but wages count in U.S. GNP (U.S. labour). Both wages and profits count in U.S. GDP (produced within U.S. borders). U.S. GNP in 2014: $17,630.6B vs. GDP: $17,418.9B — a small difference.
+    </div>
+  </section>
+
+  <!-- 2. WHAT GDP COUNTS -->
+  <section class="content-section" id="gdp-rules">
+    <h2>2 · What GDP Does and Doesn't Count</h2>
+
+    <h3>Final vs. Intermediate Goods — No Double Counting</h3>
+    <p><strong>Intermediate goods</strong> are produced by one firm for use by another firm in further production. They are excluded from GDP because their value is already embedded in the price of the final good. Counting them would lead to double counting.</p>
+
+    <div class="callout example">
+      <div class="callout-label">Value Added — Gasoline Example (Table 21.1)</div>
+      <table class="data-table">
+        <thead>
+          <tr><th>Stage</th><th>Value of Sales</th><th>Value Added</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Oil Drilling</td><td>$3.00</td><td>$3.00</td></tr>
+          <tr><td>Refining</td><td>$3.30</td><td>$0.30</td></tr>
+          <tr><td>Shipping</td><td>$3.60</td><td>$0.30</td></tr>
+          <tr><td>Retail Sale</td><td>$4.00</td><td>$0.40</td></tr>
+          <tr><td><strong>Total</strong></td><td>$13.90</td><td><strong>$4.00</strong></td></tr>
+        </tbody>
+      </table>
+      Sum of values at all stages = $13.90, but GDP only counts the final retail value = $4.00 = sum of value added at each stage. Summing total sales would overstate GDP by $9.90.
+    </div>
+
+    <h3>What GDP Excludes</h3>
+    <ul>
+      <li><strong>Used goods:</strong> Selling a used car transfers ownership — no new production. The car was counted in GDP when first made.</li>
+      <li><strong>Paper transactions:</strong> Buying stocks, bonds, or other financial assets involves no current production. <em>Exception:</em> brokerage fees are counted (a service is being provided).</li>
+      <li><strong>Output produced abroad by domestically owned factors:</strong> U.S. citizens working for a foreign company abroad → not in U.S. GDP. Foreigners working in the U.S. → counted in U.S. GDP.</li>
+      <li><strong>Transfer payments:</strong> Social Security, welfare — no goods or services produced in exchange.</li>
+      <li><strong>Government interest payments:</strong> Treated as transfers, not payments for current production.</li>
+    </ul>
+
+    <div class="formula-box">
+      <div class="label">GDP Relationship to Sales</div>
+      <div class="formula">GDP = Final Sales + Change in Business Inventories</div>
+      <div class="note">GDP measures production, not just sales. Unsold goods that enter inventory are counted as investment (production for later sale).</div>
+    </div>
+  </section>
+
+  <!-- 3. EXPENDITURE APPROACH -->
+  <section class="content-section" id="expenditure">
+    <h2>3 · Expenditure Approach: C + I + G + NX</h2>
+
+    <p>The <strong>expenditure approach</strong> calculates GDP by summing what all four sectors spend on final goods and services:</p>
+
+    <div class="formula-box">
+      <div class="label">GDP — Expenditure Approach</div>
+      <div class="formula">GDP = C + I + G + (EX − IM)</div>
+      <div class="note">C = Personal Consumption · I = Gross Private Domestic Investment · G = Government Consumption &amp; Gross Investment · EX = Exports · IM = Imports</div>
+    </div>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">U.S. GDP Components, 2014 — Expenditure Approach</div>
+      <svg viewBox="0 0 500 280" width="100%" style="max-width:500px;display:block;margin:0 auto;" aria-label="GDP components bar chart">
+        <!-- Background grid lines -->
+        <line x1="120" y1="20" x2="120" y2="240" stroke="#1e2233" stroke-width="1"/>
+        <line x1="220" y1="20" x2="220" y2="240" stroke="#1e2233" stroke-width="1"/>
+        <line x1="320" y1="20" x2="320" y2="240" stroke="#1e2233" stroke-width="1"/>
+        <line x1="420" y1="20" x2="420" y2="240" stroke="#1e2233" stroke-width="1"/>
+
+        <!-- Axis -->
+        <line x1="100" y1="240" x2="480" y2="240" stroke="#3a4070" stroke-width="1.5"/>
+        <line x1="100" y1="20" x2="100" y2="240" stroke="#3a4070" stroke-width="1.5"/>
+
+        <!-- Scale labels -->
+        <text x="100" y="254" fill="#7a7570" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">0%</text>
+        <text x="200" y="254" fill="#7a7570" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">25%</text>
+        <text x="300" y="254" fill="#7a7570" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">50%</text>
+        <text x="400" y="254" fill="#7a7570" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">75%</text>
+
+        <!-- C: 68.5% → bar width = 68.5/100 * 380 = 260 -->
+        <rect x="100" y="40" width="260" height="34" fill="#c9a84c" rx="2"/>
+        <text x="95" y="62" fill="#b8b2a4" font-size="12" font-family="'Lora',serif" text-anchor="end">C</text>
+        <text x="368" y="62" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace">68.5%</text>
+
+        <!-- I: 16.4% → 62 -->
+        <rect x="100" y="90" width="62" height="34" fill="#6b8cba" rx="2"/>
+        <text x="95" y="112" fill="#b8b2a4" font-size="12" font-family="'Lora',serif" text-anchor="end">I</text>
+        <text x="170" y="112" fill="#6b8cba" font-size="12" font-family="'JetBrains Mono',monospace">16.4%</text>
+
+        <!-- G: 18.2% → 69 -->
+        <rect x="100" y="140" width="69" height="34" fill="#5a9e72" rx="2"/>
+        <text x="95" y="162" fill="#b8b2a4" font-size="12" font-family="'Lora',serif" text-anchor="end">G</text>
+        <text x="177" y="162" fill="#5a9e72" font-size="12" font-family="'JetBrains Mono',monospace">18.2%</text>
+
+        <!-- NX: -3.1% → show negative bar (small, going left... just show narrow) -->
+        <rect x="88" y="190" width="12" height="34" fill="#9e5a5a" rx="2"/>
+        <text x="95" y="212" fill="#b8b2a4" font-size="12" font-family="'Lora',serif" text-anchor="end">NX</text>
+        <text x="108" y="212" fill="#9e5a5a" font-size="12" font-family="'JetBrains Mono',monospace">−3.1%</text>
+      </svg>
+      <div class="diagram-caption">Consumption is by far the largest component at 68.5% of GDP. Net exports were negative in 2014 (imports exceeded exports).</div>
+    </div>
+
+    <h3>C — Personal Consumption Expenditures (68.5% of GDP, 2014)</h3>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Durable Goods (7.5%)</div><div class="term-def">Last a relatively long time: automobiles, furniture, appliances.</div></div>
+      <div class="term-card"><div class="term-name">Nondurable Goods (15.3%)</div><div class="term-def">Used up fairly quickly: food, clothing, gasoline, cigarettes.</div></div>
+      <div class="term-card"><div class="term-name">Services (45.7%)</div><div class="term-def">No physical item produced: legal, medical, educational services. Nearly half of GDP.</div></div>
+    </div>
+
+    <h3>I — Gross Private Domestic Investment (16.4% of GDP)</h3>
+    <p>Investment in economics = purchase of new capital — NOT stocks or bonds.</p>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Nonresidential Investment (12.7%)</div><div class="term-def">Machines, tools, plant equipment bought by firms.</div></div>
+      <div class="term-card"><div class="term-name">Residential Investment (3.2%)</div><div class="term-def">New houses and apartment buildings built by households and firms.</div></div>
+      <div class="term-card"><div class="term-name">Change in Business Inventories (0.5%)</div><div class="term-def">Goods produced now but intended for future sale. Positive = inventories grew; negative = inventories fell. Treated as investment because inventories are capital.</div></div>
+    </div>
+
+    <div class="formula-box">
+      <div class="label">Gross vs. Net Investment</div>
+      <div class="formula">Net Investment = Gross Investment − Depreciation</div>
+      <div class="note">Depreciation = fall in asset value each period. Net investment shows whether the capital stock is growing (positive) or shrinking (negative).<br>Capital stock at end of period = Capital at start + Net Investment</div>
+    </div>
+
+    <h3>G — Government Consumption and Gross Investment (18.2% of GDP)</h3>
+    <p>Includes purchases of final goods (bombs, pencils, school buildings) and services (military salaries, teachers). <strong>Does NOT include:</strong> transfer payments (Social Security, welfare) or government interest payments — neither represents payment for current production. Federal: 7.0% of GDP; State &amp; Local: 11.2%.</p>
+
+    <h3>NX — Net Exports (−3.1% of GDP, 2014)</h3>
+    <div class="formula-box">
+      <div class="label">Net Exports</div>
+      <div class="formula">NX = Exports (EX) − Imports (IM)</div>
+      <div class="note">C+I+G includes spending on foreign goods (imports) → subtract IM. It misses goods sold abroad (exports) → add EX. In 2014: EX=$2,337B, IM=$2,875.2B → NX=−$538.2B (trade deficit).</div>
+    </div>
+  </section>
+
+  <!-- 4. INCOME APPROACH -->
+  <section class="content-section" id="income-approach">
+    <h2>4 · Income Approach</h2>
+
+    <p>The <strong>income approach</strong> calculates GDP by summing all income earned by factors of production. Because every dollar of expenditure is income for someone, both approaches yield the same GDP.</p>
+
+    <p><strong>National income</strong> (2014: $15,070.4 billion) has eight components:</p>
+    <table class="data-table">
+      <thead><tr><th>Component</th><th>2014 ($B)</th><th>% of NI</th></tr></thead>
+      <tbody>
+        <tr><td>Compensation of employees (wages, salaries, supplements)</td><td>9,221.6</td><td>61.2%</td></tr>
+        <tr><td>Corporate profits</td><td>2,089.8</td><td>13.9%</td></tr>
+        <tr><td>Indirect taxes minus subsidies</td><td>1,145.8</td><td>7.6%</td></tr>
+        <tr><td>Proprietors' income</td><td>1,380.2</td><td>9.2%</td></tr>
+        <tr><td>Rental income</td><td>640.2</td><td>4.2%</td></tr>
+        <tr><td>Net interest</td><td>486.3</td><td>3.2%</td></tr>
+        <tr><td>Net business transfer payments</td><td>140.6</td><td>0.9%</td></tr>
+        <tr><td>Surplus of government enterprises</td><td>−34.2</td><td>−0.2%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 5. INCOME CHAIN -->
+  <section class="content-section" id="income-chain">
+    <h2>5 · From GDP to Disposable Personal Income</h2>
+
+    <p>The chain of income measures (2014 data):</p>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">The Income Chain: GDP → Disposable Personal Income</div>
+      <svg viewBox="0 0 560 440" width="100%" style="max-width:560px;display:block;margin:0 auto;" aria-label="Income chain diagram">
+        <defs>
+          <marker id="arr6" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#5a9e72"/>
+          </marker>
+          <marker id="arr7" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#9e5a5a"/>
+          </marker>
+        </defs>
+
+        <!-- GDP -->
+        <rect x="160" y="10" width="240" height="44" rx="4" fill="#252a3a" stroke="#c9a84c" stroke-width="1.5"/>
+        <text x="280" y="30" fill="#c9a84c" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">GDP</text>
+        <text x="280" y="46" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$17,418.9B</text>
+
+        <!-- Arrow down, with + receipts and - payments label -->
+        <line x1="280" y1="54" x2="280" y2="78" stroke="#5a9e72" stroke-width="1.5" marker-end="url(#arr6)"/>
+        <text x="295" y="70" fill="#7a7570" font-size="10" font-family="'Lora',serif" font-style="italic">+ factor income from abroad − payments to abroad</text>
+
+        <!-- GNP -->
+        <rect x="160" y="80" width="240" height="44" rx="4" fill="#252a3a" stroke="#6b8cba" stroke-width="1.5"/>
+        <text x="280" y="100" fill="#6b8cba" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">GNP</text>
+        <text x="280" y="116" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$17,630.6B</text>
+
+        <line x1="280" y1="124" x2="280" y2="148" stroke="#9e5a5a" stroke-width="1.5" marker-end="url(#arr7)"/>
+        <text x="295" y="140" fill="#7a7570" font-size="10" font-family="'Lora',serif" font-style="italic">− Depreciation ($2,736.2B)</text>
+
+        <!-- NNP -->
+        <rect x="160" y="150" width="240" height="44" rx="4" fill="#252a3a" stroke="#5a9e72" stroke-width="1.5"/>
+        <text x="280" y="170" fill="#5a9e72" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Net National Product (NNP)</text>
+        <text x="280" y="186" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$14,894.4B</text>
+
+        <line x1="280" y1="194" x2="280" y2="218" stroke="#9e5a5a" stroke-width="1.5" marker-end="url(#arr7)"/>
+        <text x="295" y="210" fill="#7a7570" font-size="10" font-family="'Lora',serif" font-style="italic">− Statistical discrepancy</text>
+
+        <!-- National Income -->
+        <rect x="160" y="220" width="240" height="44" rx="4" fill="#252a3a" stroke="#d4874a" stroke-width="1.5"/>
+        <text x="280" y="240" fill="#d4874a" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">National Income</text>
+        <text x="280" y="256" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$15,070.4B</text>
+
+        <line x1="280" y1="264" x2="280" y2="288" stroke="#9e5a5a" stroke-width="1.5" marker-end="url(#arr7)"/>
+        <text x="295" y="280" fill="#7a7570" font-size="10" font-family="'Lora',serif" font-style="italic">− NI not going to households (retained earnings)</text>
+
+        <!-- Personal Income -->
+        <rect x="160" y="290" width="240" height="44" rx="4" fill="#252a3a" stroke="#c9a84c" stroke-width="1.5"/>
+        <text x="280" y="310" fill="#c9a84c" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Personal Income</text>
+        <text x="280" y="326" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$14,728.6B</text>
+
+        <line x1="280" y1="334" x2="280" y2="358" stroke="#9e5a5a" stroke-width="1.5" marker-end="url(#arr7)"/>
+        <text x="295" y="350" fill="#7a7570" font-size="10" font-family="'Lora',serif" font-style="italic">− Personal income taxes ($1,742.9B)</text>
+
+        <!-- Disposable Income -->
+        <rect x="160" y="360" width="240" height="50" rx="4" fill="#1a2040" stroke="#5a9e72" stroke-width="2"/>
+        <text x="280" y="380" fill="#5a9e72" font-size="13" font-family="'Playfair Display',serif" font-weight="700" text-anchor="middle">Disposable Personal Income</text>
+        <text x="280" y="398" fill="#b8b2a4" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">$12,985.8B · Saving rate: 4.8%</text>
+      </svg>
+      <div class="diagram-caption">Disposable personal income = what households actually have to spend or save. Personal saving rate = personal saving / disposable income.</div>
+    </div>
+
+    <div class="formula-box">
+      <div class="label">Personal Saving Rate (2014)</div>
+      <div class="formula">Personal Saving Rate = Personal Saving / Disposable Personal Income = 4.8%</div>
+      <div class="note">Saving rates rise in recessions (anxiety about the future) and fall in booms (pent-up demand). In 2005 the rate reached a low of 2.5%.</div>
+    </div>
+  </section>
+
+  <!-- 6. NOMINAL VS REAL -->
+  <section class="content-section" id="nominal-real">
+    <h2>6 · Nominal vs. Real GDP</h2>
+
+    <p><strong>Nominal GDP</strong> is GDP measured in current (today's) prices. If the price of pizza rises from $1 to $1.10 but production stays at 100 slices, nominal GDP rises from $100 to $110 — but no more was produced. Nominal GDP conflates price changes with output changes.</p>
+
+    <p><strong>Real GDP</strong> is nominal GDP adjusted for price changes — it measures changes in actual production, holding prices constant. It is the better measure of economic output over time.</p>
+
+    <h3>The Fixed-Weight Problem and the BEA's Solution</h3>
+    <p>Using a single base year's prices to weight quantities (the old method) produced results that depended heavily on which year was chosen as the base. Growth rates varied wildly (24.8% vs 4.3% in the textbook example, depending on base year).</p>
+
+    <p>The <strong>BEA's current approach</strong> (chain-weighted real GDP):</p>
+    <ol>
+      <li>Compute growth using Year 1 prices as weights → get one growth rate.</li>
+      <li>Compute growth using Year 2 prices as weights → get a second growth rate.</li>
+      <li>Take the geometric average of the two growth rates.</li>
+      <li>Roll forward: use Years 2 &amp; 3 for the next period's calculation, etc.</li>
+    </ol>
+    <p>This "splits the difference" between base years, producing more stable and accurate growth estimates.</p>
+
+    <div class="callout example">
+      <div class="callout-label">Three-Good Economy Example (Table 21.6)</div>
+      Two years, three goods (A, B, C). Nominal GDP: Year 1 = $12.10, Year 2 = $19.20 (+58.7%). But using Year 1 prices: real growth = 24.8%. Using Year 2 prices: real growth = 4.3%. BEA geometric average ≈ 14.09% — the chain-weighted real GDP growth rate.
+    </div>
+  </section>
+
+  <!-- 7. GDP DEFLATOR -->
+  <section class="content-section" id="deflator">
+    <h2>7 · The GDP Deflator</h2>
+
+    <p>While real GDP measures <em>quantity</em>, the <strong>GDP deflator</strong> measures the <em>overall price level</em>. It is defined as:</p>
+
+    <div class="formula-box">
+      <div class="label">GDP Deflator</div>
+      <div class="formula">GDP Deflator = (Nominal GDP / Real GDP) × 100</div>
+      <div class="note">The deflator equals 100 in the base year. A deflator of 110 means prices are 10% higher than in the base year.</div>
+    </div>
+
+    <p>The GDP deflator differs from the Consumer Price Index (CPI): the deflator covers all final goods and services in the economy (including investment goods and government purchases), while the CPI tracks a fixed basket of consumer goods.</p>
+  </section>
+
+  <!-- 8. LIMITATIONS -->
+  <section class="content-section" id="limitations">
+    <h2>8 · Limitations of GDP as a Measure of Well-Being</h2>
+
+    <p>GDP is an excellent measure of economic production, but a poor measure of <em>well-being</em> or quality of life:</p>
+
+    <ul>
+      <li><strong>Non-market activities ignored:</strong> Household production (cooking, cleaning, childcare), volunteer work, and informal economy transactions are not counted, even though they create real value. GDP would increase if everyone hired others to do what they currently do themselves.</li>
+      <li><strong>Leisure not counted:</strong> GDP rises if people work more hours, but working more means less leisure — a cost that GDP ignores.</li>
+      <li><strong>Environmental quality:</strong> Pollution and resource depletion reduce well-being but may actually increase GDP (cleaning up pollution counts as production). GDP does not subtract environmental damage.</li>
+      <li><strong>Distribution:</strong> GDP says nothing about how output is distributed. A country with the same GDP as another might have extreme inequality while the other distributes income broadly.</li>
+      <li><strong>Crime and social problems:</strong> Higher crime leads to more spending on security and prisons — which <em>increases</em> GDP, though well-being falls.</li>
+      <li><strong>Composition of output:</strong> $1 billion in weapons and $1 billion in education add equally to GDP, but have very different social effects.</li>
+    </ul>
+
+    <div class="callout warning">
+      <div class="callout-label">GDP Is Not Happiness</div>
+      GDP per capita correlates with living standards, but misses crucial dimensions. Alternative measures include the Human Development Index (HDI), the Genuine Progress Indicator (GPI), and Bhutan's Gross National Happiness index.
+    </div>
+  </section>
+
+  <!-- KEY TERMS -->
+  <section class="content-section" id="terms21">
+    <h2>9 · Key Terms</h2>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">GDP</div><div class="term-def">Total market value of all final goods and services produced within a country in a given period.</div></div>
+      <div class="term-card"><div class="term-name">GNP</div><div class="term-def">Total market value of all final goods produced by a country's citizens, wherever produced.</div></div>
+      <div class="term-card"><div class="term-name">Final Goods &amp; Services</div><div class="term-def">Goods produced for final use — not for further processing by another firm.</div></div>
+      <div class="term-card"><div class="term-name">Intermediate Goods</div><div class="term-def">Goods produced for use in further processing by another firm. Excluded from GDP to avoid double counting.</div></div>
+      <div class="term-card"><div class="term-name">Value Added</div><div class="term-def">Value of output minus cost of inputs at each production stage. Sum of value added = final sale price.</div></div>
+      <div class="term-card"><div class="term-name">Expenditure Approach</div><div class="term-def">GDP = C + I + G + (EX − IM). Sums spending by all sectors.</div></div>
+      <div class="term-card"><div class="term-name">Income Approach</div><div class="term-def">GDP via wages, rents, interest, profits. Equals the expenditure approach by definition.</div></div>
+      <div class="term-card"><div class="term-name">Personal Consumption (C)</div><div class="term-def">Household spending on durable goods, nondurables, and services. 68.5% of U.S. GDP (2014).</div></div>
+      <div class="term-card"><div class="term-name">Gross Private Domestic Investment (I)</div><div class="term-def">Nonresidential + residential investment + change in business inventories. 16.4% of GDP.</div></div>
+      <div class="term-card"><div class="term-name">Depreciation</div><div class="term-def">Fall in asset value each period due to wear or obsolescence.</div></div>
+      <div class="term-card"><div class="term-name">Net Investment</div><div class="term-def">Gross investment minus depreciation. Positive = capital stock growing.</div></div>
+      <div class="term-card"><div class="term-name">Government Consumption (G)</div><div class="term-def">Federal, state, and local purchases of final goods and services. Excludes transfer payments.</div></div>
+      <div class="term-card"><div class="term-name">Net Exports (NX)</div><div class="term-def">Exports minus imports. Negative when imports exceed exports (trade deficit).</div></div>
+      <div class="term-card"><div class="term-name">National Income</div><div class="term-def">Total income earned by a country's factors of production. ≈ GNP − depreciation.</div></div>
+      <div class="term-card"><div class="term-name">Personal Income</div><div class="term-def">Total income received by households (before personal income taxes).</div></div>
+      <div class="term-card"><div class="term-name">Disposable Personal Income</div><div class="term-def">Personal income minus personal income taxes. What households have to spend or save.</div></div>
+      <div class="term-card"><div class="term-name">Nominal GDP</div><div class="term-def">GDP measured in current-year prices. Mixes price and output changes.</div></div>
+      <div class="term-card"><div class="term-name">Real GDP</div><div class="term-def">Nominal GDP adjusted for price changes. Measures true production growth.</div></div>
+      <div class="term-card"><div class="term-name">GDP Deflator</div><div class="term-def">(Nominal GDP / Real GDP) × 100. Measures overall price level across all final goods.</div></div>
+      <div class="term-card"><div class="term-name">Personal Saving Rate</div><div class="term-def">Personal saving / disposable personal income. U.S. rate was 4.8% in 2014.</div></div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz21">
+    <div class="quiz-header">
+      <h2>Chapter 21 Quiz</h2>
+      <div class="quiz-score-badge" id="score21">Score: —</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progress</span><span id="prog21-text">0 / 12</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="prog21" style="width:0%"></div></div>
+    </div>
+
+    <div class="quiz-container" id="q21-container">
+
+      <div class="question-block" data-q="0">
+        <div class="question-num">Question 1</div>
+        <div class="question-text">GDP is defined as the total market value of all final goods and services produced:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_0" value="a"><span class="option-key">A</span> By citizens of a country, wherever in the world production occurs</label>
+          <label class="option-label"><input type="radio" name="q21_0" value="b"><span class="option-key">B</span> Within a country's borders in a given period, by factors of production located there</label>
+          <label class="option-label"><input type="radio" name="q21_0" value="c"><span class="option-key">C</span> By firms that are incorporated within a country</label>
+          <label class="option-label"><input type="radio" name="q21_0" value="d"><span class="option-key">D</span> And traded in markets, excluding subsistence production</label>
+        </div>
+        <div class="feedback" id="fb21_0"></div>
+      </div>
+
+      <div class="question-block" data-q="1">
+        <div class="question-num">Question 2</div>
+        <div class="question-text">Why are intermediate goods excluded from GDP?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_1" value="a"><span class="option-key">A</span> They are produced by foreign-owned firms and thus belong in GNP</label>
+          <label class="option-label"><input type="radio" name="q21_1" value="b"><span class="option-key">B</span> Including them would double count their value, since it is already embedded in the final good's price</label>
+          <label class="option-label"><input type="radio" name="q21_1" value="c"><span class="option-key">C</span> They are not traded in formal markets</label>
+          <label class="option-label"><input type="radio" name="q21_1" value="d"><span class="option-key">D</span> They depreciate too quickly to be measured accurately</label>
+        </div>
+        <div class="feedback" id="fb21_1"></div>
+      </div>
+
+      <div class="question-block" data-q="2">
+        <div class="question-num">Question 3</div>
+        <div class="question-text">The expenditure approach to calculating GDP uses the formula:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_2" value="a"><span class="option-key">A</span> GDP = Wages + Rents + Interest + Profits</label>
+          <label class="option-label"><input type="radio" name="q21_2" value="b"><span class="option-key">B</span> GDP = NNP − Depreciation</label>
+          <label class="option-label"><input type="radio" name="q21_2" value="c"><span class="option-key">C</span> GDP = C + I + G + (EX − IM)</label>
+          <label class="option-label"><input type="radio" name="q21_2" value="d"><span class="option-key">D</span> GDP = Personal Income + Corporate Profits + Government Revenue</label>
+        </div>
+        <div class="feedback" id="fb21_2"></div>
+      </div>
+
+      <div class="question-block" data-q="3">
+        <div class="question-num">Question 4</div>
+        <div class="question-text">Which of the following IS counted in U.S. GDP?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_3" value="a"><span class="option-key">A</span> The resale of a 10-year-old house</label>
+          <label class="option-label"><input type="radio" name="q21_3" value="b"><span class="option-key">B</span> A Social Security payment made by the government to a retiree</label>
+          <label class="option-label"><input type="radio" name="q21_3" value="c"><span class="option-key">C</span> Brokerage fees charged by a stock broker for trading shares</label>
+          <label class="option-label"><input type="radio" name="q21_3" value="d"><span class="option-key">D</span> The purchase of Microsoft stock on the New York Stock Exchange</label>
+        </div>
+        <div class="feedback" id="fb21_3"></div>
+      </div>
+
+      <div class="question-block" data-q="4">
+        <div class="question-num">Question 5</div>
+        <div class="question-text">In 2014, which component represented the largest share of U.S. GDP?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_4" value="a"><span class="option-key">A</span> Government consumption and gross investment (G)</label>
+          <label class="option-label"><input type="radio" name="q21_4" value="b"><span class="option-key">B</span> Gross private domestic investment (I)</label>
+          <label class="option-label"><input type="radio" name="q21_4" value="c"><span class="option-key">C</span> Personal consumption expenditures (C) at 68.5%</label>
+          <label class="option-label"><input type="radio" name="q21_4" value="d"><span class="option-key">D</span> Net exports (EX − IM)</label>
+        </div>
+        <div class="feedback" id="fb21_4"></div>
+      </div>
+
+      <div class="question-block" data-q="5">
+        <div class="question-num">Question 6</div>
+        <div class="question-text">Net investment equals:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_5" value="a"><span class="option-key">A</span> Gross investment plus depreciation</label>
+          <label class="option-label"><input type="radio" name="q21_5" value="b"><span class="option-key">B</span> Gross investment minus depreciation</label>
+          <label class="option-label"><input type="radio" name="q21_5" value="c"><span class="option-key">C</span> Change in business inventories only</label>
+          <label class="option-label"><input type="radio" name="q21_5" value="d"><span class="option-key">D</span> Residential investment plus nonresidential investment</label>
+        </div>
+        <div class="feedback" id="fb21_5"></div>
+      </div>
+
+      <div class="question-block" data-q="6">
+        <div class="question-num">Question 7</div>
+        <div class="question-text">Government transfer payments (e.g., Social Security) are excluded from G in the GDP calculation because:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_6" value="a"><span class="option-key">A</span> They are already counted as part of household consumption (C)</label>
+          <label class="option-label"><input type="radio" name="q21_6" value="b"><span class="option-key">B</span> They are not payments for currently produced goods or services</label>
+          <label class="option-label"><input type="radio" name="q21_6" value="c"><span class="option-key">C</span> They are classified as investment rather than consumption</label>
+          <label class="option-label"><input type="radio" name="q21_6" value="d"><span class="option-key">D</span> They represent flows from the rest of the world</label>
+        </div>
+        <div class="feedback" id="fb21_6"></div>
+      </div>
+
+      <div class="question-block" data-q="7">
+        <div class="question-num">Question 8</div>
+        <div class="question-text">The key reason we prefer real GDP over nominal GDP for comparing output across years is:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_7" value="a"><span class="option-key">A</span> Real GDP is easier for the Bureau of Economic Analysis to calculate</label>
+          <label class="option-label"><input type="radio" name="q21_7" value="b"><span class="option-key">B</span> Real GDP removes the effect of price changes, isolating actual production growth</label>
+          <label class="option-label"><input type="radio" name="q21_7" value="c"><span class="option-key">C</span> Real GDP includes non-market activities that nominal GDP misses</label>
+          <label class="option-label"><input type="radio" name="q21_7" value="d"><span class="option-key">D</span> Nominal GDP double-counts intermediate goods while real GDP does not</label>
+        </div>
+        <div class="feedback" id="fb21_7"></div>
+      </div>
+
+      <div class="question-block" data-q="8">
+        <div class="question-num">Question 9</div>
+        <div class="question-text">The GDP deflator is calculated as:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_8" value="a"><span class="option-key">A</span> (Real GDP / Nominal GDP) × 100</label>
+          <label class="option-label"><input type="radio" name="q21_8" value="b"><span class="option-key">B</span> (Nominal GDP / Real GDP) × 100</label>
+          <label class="option-label"><input type="radio" name="q21_8" value="c"><span class="option-key">C</span> (Consumer Price Index / Producer Price Index) × 100</label>
+          <label class="option-label"><input type="radio" name="q21_8" value="d"><span class="option-key">D</span> National Income × 100 / GDP</label>
+        </div>
+        <div class="feedback" id="fb21_8"></div>
+      </div>
+
+      <div class="question-block" data-q="9">
+        <div class="question-num">Question 10</div>
+        <div class="question-text">Disposable personal income is defined as:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_9" value="a"><span class="option-key">A</span> National income minus corporate retained earnings</label>
+          <label class="option-label"><input type="radio" name="q21_9" value="b"><span class="option-key">B</span> Personal income minus personal income taxes</label>
+          <label class="option-label"><input type="radio" name="q21_9" value="c"><span class="option-key">C</span> GNP minus depreciation</label>
+          <label class="option-label"><input type="radio" name="q21_9" value="d"><span class="option-key">D</span> GDP minus government transfer payments</label>
+        </div>
+        <div class="feedback" id="fb21_9"></div>
+      </div>
+
+      <div class="question-block" data-q="10">
+        <div class="question-num">Question 11</div>
+        <div class="question-text">Which of the following is a limitation of GDP as a measure of well-being?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_10" value="a"><span class="option-key">A</span> GDP includes both intermediate and final goods, overstating true output</label>
+          <label class="option-label"><input type="radio" name="q21_10" value="b"><span class="option-key">B</span> GDP ignores non-market activities (household production, volunteer work) and does not account for income distribution or environmental quality</label>
+          <label class="option-label"><input type="radio" name="q21_10" value="c"><span class="option-key">C</span> GDP is measured annually rather than quarterly, reducing its timeliness</label>
+          <label class="option-label"><input type="radio" name="q21_10" value="d"><span class="option-key">D</span> GDP is a nominal measure that rises with inflation even when output is unchanged</label>
+        </div>
+        <div class="feedback" id="fb21_10"></div>
+      </div>
+
+      <div class="question-block" data-q="11">
+        <div class="question-num">Question 12</div>
+        <div class="question-text">GNP differs from GDP in that GNP:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q21_11" value="a"><span class="option-key">A</span> Excludes government spending and counts only private sector output</label>
+          <label class="option-label"><input type="radio" name="q21_11" value="b"><span class="option-key">B</span> Measures output produced by a country's citizens regardless of where production occurs, while GDP counts output produced within borders</label>
+          <label class="option-label"><input type="radio" name="q21_11" value="c"><span class="option-key">C</span> Subtracts depreciation from gross investment, giving a net measure</label>
+          <label class="option-label"><input type="radio" name="q21_11" value="d"><span class="option-key">D</span> Counts only goods, not services, to avoid double counting</label>
+        </div>
+        <div class="feedback" id="fb21_11"></div>
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn btn-primary" onclick="submitQuiz('21')">Submit Quiz</button>
+        <button class="btn btn-outline" onclick="resetQuiz('21')">Reset</button>
+      </div>
+      <div class="result-banner" id="result21">
+        <div><div class="result-score">Score: <span id="score21-num"></span> / 12</div><div class="result-msg" id="result21-msg"></div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 19 — Public Finance: The Economics of Taxation</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">ECON F211</a>
+    <ul class="nav-links">
+      <li><a href="ch16.html">Ch 16</a></li>
+      <li><a href="ch19.html" class="active">Ch 19</a></li>
+      <li><a href="ch20.html">Ch 20</a></li>
+      <li><a href="ch21.html">Ch 21</a></li>
+      <li><a href="final-quiz.html">Final Quiz</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <header class="ch-hero">
+    <div class="chapter-num">Chapter 19</div>
+    <h1>Public Finance: The Economics of Taxation</h1>
+    <p>How taxes work, who really pays them, and when taxation distorts economic decisions — or corrects them.</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#basics">Basics of Taxation</a></li>
+      <li><a href="#incidence">Tax Incidence: Who Really Pays?</a></li>
+      <li><a href="#payroll">Incidence of Payroll Taxes</a></li>
+      <li><a href="#corporate">Incidence of Corporate Profits Tax</a></li>
+      <li><a href="#excess">Excess Burden and Neutrality</a></li>
+      <li><a href="#second-best">The Principle of Second Best</a></li>
+      <li><a href="#equity">Tax Equity</a></li>
+      <li><a href="#social-choice">Social Choice</a></li>
+      <li><a href="#terms19">Key Terms</a></li>
+      <li><a href="#quiz19">Chapter Quiz</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. BASICS -->
+  <section class="content-section" id="basics">
+    <h2>1 · Basics of Taxation</h2>
+
+    <p>Every tax has two parts: a <strong>tax base</strong> (the measure on which the tax is levied — income, sales, property, profits) and a <strong>tax rate structure</strong> (the percentage of the base paid in taxes). Tax bases may be stock variables (property value at a point in time) or flow variables (income earned per month).</p>
+
+    <h3>Types of Tax Rate Structures</h3>
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Proportional Tax</div>
+        <div class="term-def">Same percentage of income at every income level. A flat 20% income tax with no deductions.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Progressive Tax</div>
+        <div class="term-def">Higher-income households pay a <em>larger</em> percentage. U.S. federal income tax — marginal rates rise with income (10% → 39.6% in 2014 brackets).</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Regressive Tax</div>
+        <div class="term-def">Higher-income households pay a <em>smaller</em> percentage. Payroll tax (capped base) and retail sales tax are regressive — lower-income earners spend a larger share of income on taxable goods.</div>
+      </div>
+    </div>
+
+    <h3>Average vs. Marginal Tax Rates</h3>
+    <div class="formula-box">
+      <div class="label">Average Tax Rate</div>
+      <div class="formula">ATR = Total Tax Paid / Total Income</div>
+      <div class="note">Describes what fraction of income overall goes to taxes.</div>
+    </div>
+    <div class="formula-box">
+      <div class="label">Marginal Tax Rate</div>
+      <div class="formula">MTR = Tax on the Next Dollar Earned</div>
+      <div class="note">Relevant for work/leisure and save/consume decisions. In a progressive system, MTR &gt; ATR.</div>
+    </div>
+
+    <div class="callout example">
+      <div class="callout-label">2014 U.S. Example (Single Filer, Standard Deduction)</div>
+      At $100K income (taxable $93,800): total tax ≈ $19,441 → ATR ≈ 19.4%, MTR = 28%.<br>
+      At $200K income (taxable $193,800): total tax ≈ $47,814 → ATR ≈ 23.9%, MTR = 33%.<br>
+      When deciding whether to work extra hours, use the <em>marginal</em> rate — that's the tax on the next dollar earned.
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">Which Rate Matters for Decisions?</div>
+      Choosing whether to work more hours → marginal rate. Evaluating how much of your income goes to taxes overall → average rate. Deciding whether to make a deductible donation → marginal rate (higher-income taxpayers get a bigger deduction benefit).
+    </div>
+  </section>
+
+  <!-- 2. TAX INCIDENCE -->
+  <section class="content-section" id="incidence">
+    <h2>2 · Tax Incidence: Who Really Pays?</h2>
+
+    <p><strong>Tax incidence</strong> is the ultimate distribution of a tax's burden — who actually bears the economic cost, regardless of who sends the cheque to the government. <strong>Tax shifting</strong> occurs when households or firms alter behaviour to avoid paying a tax, shifting the burden to others.</p>
+
+    <p>A retail sales tax levied at the same rate on all consumer goods is hard to shift because demand for all consumer goods as a category is relatively inelastic. Narrow excise taxes on specific goods (artichokes) are easier to shift because consumers switch to substitutes.</p>
+  </section>
+
+  <!-- 3. PAYROLL TAX -->
+  <section class="content-section" id="payroll">
+    <h2>3 · Incidence of Payroll Taxes</h2>
+
+    <p>Social insurance payroll taxes made up 34.8% of federal receipts in 2014. Though initially levied on employers, the burden is typically shifted partly to workers. Here's the mechanism:</p>
+
+    <ol>
+      <li>A tax of $T per unit of labour increases the employer's cost of labour by $T.</li>
+      <li>Firms reduce labour demand (substitute capital, cut output) → excess supply of labour.</li>
+      <li>Wages fall, shifting part of the tax burden onto workers.</li>
+      <li>Equilibrium: workers take home W₁ &lt; W₀; firms pay W₁ + T.</li>
+    </ol>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 19.3 — Payroll Tax Incidence</div>
+      <svg viewBox="0 0 560 320" width="100%" style="max-width:560px;display:block;margin:0 auto;" aria-label="Payroll tax incidence diagram">
+        <defs>
+          <marker id="arr3" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#7a7570"/>
+          </marker>
+        </defs>
+        <line x1="60" y1="280" x2="520" y2="280" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr3)"/>
+        <line x1="60" y1="280" x2="60" y2="30" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr3)"/>
+        <text x="522" y="290" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Labour (L)</text>
+        <text x="12" y="28" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Wage ($)</text>
+
+        <!-- Labour Supply S0 (upward) -->
+        <line x1="100" y1="260" x2="440" y2="80" stroke="#5a9e72" stroke-width="2"/>
+        <text x="444" y="78" fill="#5a9e72" font-size="13" font-family="'Lora',serif" font-style="italic">S₀</text>
+
+        <!-- Labour Demand D (downward) -->
+        <line x1="100" y1="80" x2="460" y2="260" stroke="#6b8cba" stroke-width="2"/>
+        <text x="464" y="260" fill="#6b8cba" font-size="13" font-family="'Lora',serif" font-style="italic">D</text>
+
+        <!-- S1: S0 shifted up by T (firms' perspective, same slope, starts higher) -->
+        <line x1="100" y1="200" x2="380" y2="60" stroke="#c9a84c" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="384" y="58" fill="#c9a84c" font-size="13" font-family="'Lora',serif" font-style="italic">S₁ (S₀ + T)</text>
+
+        <!-- W0: equilibrium without tax — S0 ∩ D at ~(270, 168) -->
+        <line x1="60" y1="168" x2="270" y2="168" stroke="#5a9e72" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="42" y="172" fill="#5a9e72" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="end">W₀</text>
+
+        <!-- L0 vertical -->
+        <line x1="270" y1="168" x2="270" y2="280" stroke="#5a9e72" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="270" y="296" fill="#5a9e72" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">L₀</text>
+
+        <!-- New equilibrium: S1 ∩ D at ~(215, 195) for workers' take-home W1 -->
+        <!-- W1 + T = what firms pay ~(W1+T) ~(195-40=155 for W1) -->
+        <line x1="60" y1="205" x2="215" y2="205" stroke="#d4874a" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="42" y="209" fill="#d4874a" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="end">W₁</text>
+
+        <!-- W1+T horizontal -->
+        <line x1="60" y1="145" x2="215" y2="145" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="42" y="149" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="end">W₁+T</text>
+
+        <!-- L1 vertical -->
+        <line x1="215" y1="145" x2="215" y2="280" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="215" y="296" fill="#c9a84c" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">L₁</text>
+
+        <!-- Tax rectangle shading -->
+        <rect x="60" y="145" width="155" height="60" fill="rgba(201,168,76,0.08)" stroke="rgba(201,168,76,0.25)" stroke-width="1"/>
+
+        <!-- Workers' share annotation -->
+        <text x="80" y="183" fill="#d4874a" font-size="11" font-family="'Lora',serif" font-style="italic">Workers'</text>
+        <text x="80" y="197" fill="#d4874a" font-size="11" font-family="'Lora',serif" font-style="italic">share</text>
+
+        <!-- Firms' share annotation -->
+        <text x="80" y="163" fill="#c9a84c" font-size="11" font-family="'Lora',serif" font-style="italic">Firms' share</text>
+
+        <!-- T bracket -->
+        <line x1="520" y1="145" x2="520" y2="205" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="514" y1="145" x2="526" y2="145" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="514" y1="205" x2="526" y2="205" stroke="#c9a84c" stroke-width="1.5"/>
+        <text x="528" y="178" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace">T</text>
+      </svg>
+      <div class="diagram-caption">The tax of $T drives a wedge between what firms pay (W₁+T) and what workers take home (W₁). Both parties share the burden.</div>
+    </div>
+
+    <h3>Elasticity and Who Bears the Burden</h3>
+    <p>The burden-sharing depends on the elasticities of labour supply and demand:</p>
+    <ul>
+      <li><strong>Inelastic labour supply</strong> (workers keep working regardless of wage): workers bear most of the burden. Empirical evidence suggests U.S. labour supply is close to inelastic → workers bear most of U.S. payroll tax.</li>
+      <li><strong>Elastic labour supply</strong>: workers reduce work significantly as wages fall, so firms can't lower wages much → firms bear more.</li>
+      <li>The split is the <em>same</em> whether the tax is initially levied on employers or employees — only the story differs.</li>
+    </ul>
+
+    <div class="callout warning">
+      <div class="callout-label">Regressivity of the Payroll Tax</div>
+      The U.S. payroll tax is regressive at higher incomes for two reasons: (1) wages and salaries form a smaller share of total income for high earners (who also earn dividends, profits, rents); and (2) the base was capped at $118,500 in 2015.
+    </div>
+  </section>
+
+  <!-- 4. CORPORATE TAX -->
+  <section class="content-section" id="corporate">
+    <h2>4 · Incidence of the Corporate Profits Tax</h2>
+
+    <p>The corporate profits tax is a tax on the profits of incorporated firms. Who bears this tax?</p>
+
+    <ol>
+      <li>Tax initially reduces after-tax profits in the corporate sector.</li>
+      <li>Capital shifts to the noncorporate sector (higher after-tax returns there).</li>
+      <li>More competition in noncorporate sector → profits fall there too.</li>
+      <li>Equilibrium: after-tax profit rates equalise across sectors.</li>
+    </ol>
+
+    <p><strong>Harberger (1962)</strong> concluded that owners of all capital — corporate and noncorporate — bear the corporate tax burden roughly in proportion to profits. Labour and consumer price effects are relatively small. <em>Exception:</em> for a monopolist, the corporate tax is not shifted — it falls entirely on the monopolist's profits, because a profit-maximising monopolist won't change price or output when a fixed fraction of profit is taken.</p>
+  </section>
+
+  <!-- 5. EXCESS BURDEN -->
+  <section class="content-section" id="excess">
+    <h2>5 · Excess Burden and the Principle of Neutrality</h2>
+
+    <p>When taxes distort economic decisions, they impose a burden on society that <em>exceeds</em> the revenue collected. The <strong>excess burden</strong> (also called deadweight loss) is this extra cost: the value destroyed by the tax-induced change in behaviour, which neither government nor taxpayer captures.</p>
+
+    <div class="formula-box">
+      <div class="label">Total Burden of a Tax</div>
+      <div class="formula">Total Burden = Tax Revenue Collected + Excess Burden (DWL)</div>
+    </div>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 19.5 — Excess Burden of a Distorting Excise Tax</div>
+      <svg viewBox="0 0 480 300" width="100%" style="max-width:480px;display:block;margin:0 auto;" aria-label="Excess burden diagram">
+        <defs>
+          <marker id="arr4" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#7a7570"/>
+          </marker>
+        </defs>
+        <line x1="60" y1="260" x2="450" y2="260" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr4)"/>
+        <line x1="60" y1="260" x2="60" y2="30" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr4)"/>
+        <text x="452" y="270" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Q</text>
+        <text x="12" y="28" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">P ($)</text>
+
+        <!-- Demand D (downward) -->
+        <line x1="100" y1="50" x2="420" y2="250" stroke="#6b8cba" stroke-width="2"/>
+        <text x="424" y="250" fill="#6b8cba" font-size="13" font-family="'Lora',serif" font-style="italic">D</text>
+
+        <!-- MC = P0 horizontal (perfectly elastic supply) -->
+        <line x1="60" y1="200" x2="390" y2="200" stroke="#5a9e72" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="28" y="204" fill="#5a9e72" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="end">P₀=MC</text>
+
+        <!-- P1 = P0 + T -->
+        <line x1="60" y1="140" x2="295" y2="140" stroke="#c9a84c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="28" y="144" fill="#c9a84c" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="end">P₁=P₀+T</text>
+
+        <!-- X0: D meets P0 at ~x=340 -->
+        <line x1="340" y1="200" x2="340" y2="260" stroke="#5a9e72" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="340" y="276" fill="#5a9e72" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">X₀</text>
+
+        <!-- X1: D meets P1 at ~x=230 -->
+        <line x1="230" y1="140" x2="230" y2="260" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="230" y="276" fill="#c9a84c" font-size="11" font-family="'JetBrains Mono',monospace" text-anchor="middle">X₁</text>
+
+        <!-- Tax revenue rectangle P0P1ABX1 -->
+        <rect x="60" y="140" width="170" height="60" fill="rgba(107,140,186,0.12)" stroke="rgba(107,140,186,0.3)" stroke-width="1"/>
+        <text x="145" y="175" fill="#6b8cba" font-size="11" font-family="'Lora',serif" font-style="italic" text-anchor="middle">Tax Revenue</text>
+
+        <!-- DWL triangle: A(230,140) B(340,200) ... triangle ACB -->
+        <!-- D at x=230: y=50+(200/320)*130 = 50+81=131 → label A at (230,140) approximately -->
+        <!-- Triangle: (230,140) (340,200) (230,200) -->
+        <polygon points="230,140 340,200 230,200" fill="rgba(201,168,76,0.18)" stroke="rgba(201,168,76,0.5)" stroke-width="1.5"/>
+        <text x="282" y="195" fill="#c9a84c" font-size="11" font-family="'Lora',serif" font-style="italic">DWL</text>
+
+        <!-- Labels A B C -->
+        <text x="224" y="138" fill="#e8e0d0" font-size="11" font-family="'JetBrains Mono',monospace">A</text>
+        <text x="342" y="198" fill="#e8e0d0" font-size="11" font-family="'JetBrains Mono',monospace">B</text>
+
+        <!-- T bracket -->
+        <line x1="440" y1="140" x2="440" y2="200" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="434" y1="140" x2="446" y2="140" stroke="#c9a84c" stroke-width="1.5"/>
+        <line x1="434" y1="200" x2="446" y2="200" stroke="#c9a84c" stroke-width="1.5"/>
+        <text x="448" y="174" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace">T</text>
+      </svg>
+      <div class="diagram-caption">The shaded triangle (DWL) is excess burden — consumer surplus lost to neither government revenue nor consumers. The rectangle is tax revenue collected.</div>
+    </div>
+
+    <h3>Principle of Neutrality</h3>
+    <p>All else equal, <strong>neutral taxes</strong> — those that minimise distortion of economic decisions — are preferred. The size of excess burden grows with elasticity: the more responsive buyers/sellers are to the price change, the larger the deadweight loss. A perfectly inelastic demand curve produces zero excess burden (no behaviour change).</p>
+
+    <div class="callout insight">
+      <div class="callout-label">Why Land Taxes Are Efficient</div>
+      Land is in perfectly inelastic supply — it can't move or be produced in response to a tax. A uniform land tax imposes almost no excess burden, making it one of the most efficient possible taxes.
+    </div>
+  </section>
+
+  <!-- 6. SECOND BEST -->
+  <section class="content-section" id="second-best">
+    <h2>6 · The Principle of Second Best</h2>
+
+    <p>A distorting tax doesn't always create excess burden. The <strong>principle of second best</strong> says: if other distortions already exist in the economy, introducing a new distortion may actually improve overall efficiency.</p>
+
+    <p>Two cases where distorting taxes are desirable:</p>
+    <ol>
+      <li><strong>Externalities:</strong> A Pigouvian tax on a polluting firm distorts output decisions — intentionally. The distortion corrects a prior inefficiency (uncorrected externality). No excess burden; instead, there is an efficiency gain.</li>
+      <li><strong>Pre-existing taxes:</strong> If Y and Z are already taxed at 5%, consumers shift excessively to X. Taxing X at 5% too reduces this distortion. Equal taxes on all goods prevent tax-avoidance switching.</li>
+    </ol>
+  </section>
+
+  <!-- 7. TAX EQUITY -->
+  <section class="content-section" id="equity">
+    <h2>7 · Tax Equity</h2>
+
+    <h3>Benefits-Received Principle</h3>
+    <p>Taxpayers should pay in proportion to the benefits they receive from public expenditures. Example: fuel taxes funding highway construction. Difficult to apply for pure public goods (national defense), where benefits are collective and indivisible.</p>
+
+    <h3>Ability-to-Pay Principle</h3>
+    <p>Tax burdens should reflect ability to pay, independent of benefits received. Dominates U.S. tax policy.</p>
+
+    <h3>Horizontal and Vertical Equity</h3>
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Horizontal Equity</div>
+        <div class="term-def">Those with equal ability to pay should bear equal tax burdens.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Vertical Equity</div>
+        <div class="term-def">Those with greater ability to pay should pay more. Supports progressive taxation.</div>
+      </div>
+    </div>
+
+    <h3>What Is the Best Tax Base?</h3>
+    <div class="formula-box">
+      <div class="label">Definition — Economic Income</div>
+      <div class="formula">Economic Income = Consumption + Change in Net Worth</div>
+      <div class="note">Broader than IRS income: includes unrealised capital gains, employer benefits, imputed rent from owner-occupied housing, gifts.</div>
+    </div>
+
+    <p>Three candidate tax bases:</p>
+    <ol>
+      <li><strong>Income:</strong> Current U.S. approach. Critique (Fisher): income taxes double-tax savings (once when earned, again on interest). Also distorts consumption/saving choice.</li>
+      <li><strong>Consumption:</strong> VAT systems. Argument: taxes what you "take out of the common pot." Avoids double-taxation of savings. Promotes saving and capital formation.</li>
+      <li><strong>Wealth/Net Worth:</strong> Estate taxes, property taxes. Argument: accumulated wealth better reflects true economic power. Critique: double-taxes already-taxed income if applied alongside income tax.</li>
+    </ol>
+
+    <div class="formula-box">
+      <div class="label">Net Worth</div>
+      <div class="formula">Net Worth = Total Assets − Total Liabilities</div>
+    </div>
+  </section>
+
+  <!-- 8. SOCIAL CHOICE -->
+  <section class="content-section" id="social-choice">
+    <h2>8 · Social Choice</h2>
+
+    <p>Government exists to provide what "society wants" — but aggregating individual preferences into collective decisions is not straightforward.</p>
+
+    <h3>Arrow's Impossibility Theorem (1951)</h3>
+    <p>Kenneth Arrow proved that no voting system can simultaneously satisfy all reasonable axioms of fairness and always produce consistent, non-arbitrary results. Some social decision-making system will always violate at least one desirable criterion.</p>
+
+    <h3>The Voting Paradox</h3>
+    <p>Even with only 3 voters and 3 options, majority-rule voting can produce intransitive results (A beats B, B beats C, but C beats A). This shows that the agenda — the order in which options are voted on — can determine the outcome, giving enormous power to whoever sets the agenda (e.g., rules committees in Congress).</p>
+
+    <h3>Logrolling</h3>
+    <p>Representatives trade votes — D supports E's program in exchange for E's support of D's program. Logrolling can help pass programs that benefit small groups intensely while harming many slightly, but can also help efficient legislation pass.</p>
+  </section>
+
+  <!-- KEY TERMS -->
+  <section class="content-section" id="terms19">
+    <h2>9 · Key Terms</h2>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Tax Base</div><div class="term-def">The measure on which a tax is levied (income, property, sales).</div></div>
+      <div class="term-card"><div class="term-name">Tax Rate Structure</div><div class="term-def">The percentage of the tax base that must be paid.</div></div>
+      <div class="term-card"><div class="term-name">Proportional Tax</div><div class="term-def">Same % of income at all income levels.</div></div>
+      <div class="term-card"><div class="term-name">Progressive Tax</div><div class="term-def">Higher % from higher-income households.</div></div>
+      <div class="term-card"><div class="term-name">Regressive Tax</div><div class="term-def">Lower % from higher-income households.</div></div>
+      <div class="term-card"><div class="term-name">Marginal Tax Rate</div><div class="term-def">Tax on the next dollar of income earned.</div></div>
+      <div class="term-card"><div class="term-name">Tax Incidence</div><div class="term-def">Ultimate distribution of the tax burden.</div></div>
+      <div class="term-card"><div class="term-name">Tax Shifting</div><div class="term-def">Altering behaviour to move the tax burden to others.</div></div>
+      <div class="term-card"><div class="term-name">Excess Burden (DWL)</div><div class="term-def">Burden of a tax beyond revenue collected — value destroyed by distortion.</div></div>
+      <div class="term-card"><div class="term-name">Principle of Neutrality</div><div class="term-def">Neutral taxes (minimal distortion) preferred, all else equal.</div></div>
+      <div class="term-card"><div class="term-name">Principle of Second Best</div><div class="term-def">A distorting tax can improve efficiency if other distortions already exist.</div></div>
+      <div class="term-card"><div class="term-name">Benefits-Received Principle</div><div class="term-def">Pay taxes proportional to benefits received from public spending.</div></div>
+      <div class="term-card"><div class="term-name">Ability-to-Pay Principle</div><div class="term-def">Tax burdens proportional to ability to pay, regardless of benefits.</div></div>
+      <div class="term-card"><div class="term-name">Horizontal Equity</div><div class="term-def">Equal tax burdens for those with equal ability to pay.</div></div>
+      <div class="term-card"><div class="term-name">Vertical Equity</div><div class="term-def">Greater tax burdens for those with greater ability to pay.</div></div>
+      <div class="term-card"><div class="term-name">Economic Income</div><div class="term-def">Consumption + change in net worth. Broader than taxable income.</div></div>
+      <div class="term-card"><div class="term-name">Impossibility Theorem</div><div class="term-def">Arrow: no voting system always yields consistent, non-arbitrary results.</div></div>
+      <div class="term-card"><div class="term-name">Voting Paradox</div><div class="term-def">Majority rule can produce intransitive preferences (A>B, B>C, C>A).</div></div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz19">
+    <div class="quiz-header">
+      <h2>Chapter 19 Quiz</h2>
+      <div class="quiz-score-badge" id="score19">Score: —</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progress</span><span id="prog19-text">0 / 12</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="prog19" style="width:0%"></div></div>
+    </div>
+
+    <div class="quiz-container" id="q19-container">
+
+      <div class="question-block" data-q="0">
+        <div class="question-num">Question 1</div>
+        <div class="question-text">A tax is progressive if it:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_0" value="a"><span class="option-key">A</span> Takes the same dollar amount from everyone</label>
+          <label class="option-label"><input type="radio" name="q19_0" value="b"><span class="option-key">B</span> Takes a higher percentage of income from higher-income households</label>
+          <label class="option-label"><input type="radio" name="q19_0" value="c"><span class="option-key">C</span> Takes a lower percentage of income from higher-income households</label>
+          <label class="option-label"><input type="radio" name="q19_0" value="d"><span class="option-key">D</span> Is levied only on corporate profits</label>
+        </div>
+        <div class="feedback" id="fb19_0"></div>
+      </div>
+
+      <div class="question-block" data-q="1">
+        <div class="question-num">Question 2</div>
+        <div class="question-text">The marginal tax rate is most relevant when deciding:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_1" value="a"><span class="option-key">A</span> How much total income you earned this year</label>
+          <label class="option-label"><input type="radio" name="q19_1" value="b"><span class="option-key">B</span> Whether to work additional hours</label>
+          <label class="option-label"><input type="radio" name="q19_1" value="c"><span class="option-key">C</span> What your overall tax burden is relative to income</label>
+          <label class="option-label"><input type="radio" name="q19_1" value="d"><span class="option-key">D</span> Whether the tax system is regressive</label>
+        </div>
+        <div class="feedback" id="fb19_1"></div>
+      </div>
+
+      <div class="question-block" data-q="2">
+        <div class="question-num">Question 3</div>
+        <div class="question-text">Tax incidence refers to:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_2" value="a"><span class="option-key">A</span> The legal obligation to pay a tax</label>
+          <label class="option-label"><input type="radio" name="q19_2" value="b"><span class="option-key">B</span> The total amount of tax revenue collected by government</label>
+          <label class="option-label"><input type="radio" name="q19_2" value="c"><span class="option-key">C</span> The ultimate distribution of a tax's economic burden</label>
+          <label class="option-label"><input type="radio" name="q19_2" value="d"><span class="option-key">D</span> The rate at which taxes are applied to income</label>
+        </div>
+        <div class="feedback" id="fb19_2"></div>
+      </div>
+
+      <div class="question-block" data-q="3">
+        <div class="question-num">Question 4</div>
+        <div class="question-text">If labour supply is relatively inelastic, who bears most of the burden of a payroll tax?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_3" value="a"><span class="option-key">A</span> Firms (employers)</label>
+          <label class="option-label"><input type="radio" name="q19_3" value="b"><span class="option-key">B</span> Workers (employees)</label>
+          <label class="option-label"><input type="radio" name="q19_3" value="c"><span class="option-key">C</span> Consumers of the firm's products</label>
+          <label class="option-label"><input type="radio" name="q19_3" value="d"><span class="option-key">D</span> Government</label>
+        </div>
+        <div class="feedback" id="fb19_3"></div>
+      </div>
+
+      <div class="question-block" data-q="4">
+        <div class="question-num">Question 5</div>
+        <div class="question-text">The excess burden of a tax is also known as:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_4" value="a"><span class="option-key">A</span> Tax revenue</label>
+          <label class="option-label"><input type="radio" name="q19_4" value="b"><span class="option-key">B</span> The marginal tax rate</label>
+          <label class="option-label"><input type="radio" name="q19_4" value="c"><span class="option-key">C</span> Deadweight loss</label>
+          <label class="option-label"><input type="radio" name="q19_4" value="d"><span class="option-key">D</span> The average tax rate</label>
+        </div>
+        <div class="feedback" id="fb19_4"></div>
+      </div>
+
+      <div class="question-block" data-q="5">
+        <div class="question-num">Question 6</div>
+        <div class="question-text">The principle of neutrality states that, all else equal:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_5" value="a"><span class="option-key">A</span> Progressive taxes are always preferred to regressive taxes</label>
+          <label class="option-label"><input type="radio" name="q19_5" value="b"><span class="option-key">B</span> Taxes that do not distort economic decisions are preferred</label>
+          <label class="option-label"><input type="radio" name="q19_5" value="c"><span class="option-key">C</span> All tax rates should be set equal across income groups</label>
+          <label class="option-label"><input type="radio" name="q19_5" value="d"><span class="option-key">D</span> Governments should never tax savings</label>
+        </div>
+        <div class="feedback" id="fb19_5"></div>
+      </div>
+
+      <div class="question-block" data-q="6">
+        <div class="question-num">Question 7</div>
+        <div class="question-text">Harberger's analysis of the corporate profits tax concluded that the burden ultimately falls primarily on:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_6" value="a"><span class="option-key">A</span> Workers, through lower wages</label>
+          <label class="option-label"><input type="radio" name="q19_6" value="b"><span class="option-key">B</span> Consumers, through higher prices</label>
+          <label class="option-label"><input type="radio" name="q19_6" value="c"><span class="option-key">C</span> All capital owners, roughly in proportion to profits</label>
+          <label class="option-label"><input type="radio" name="q19_6" value="d"><span class="option-key">D</span> Government itself, through reduced revenue</label>
+        </div>
+        <div class="feedback" id="fb19_6"></div>
+      </div>
+
+      <div class="question-block" data-q="7">
+        <div class="question-num">Question 8</div>
+        <div class="question-text">The benefits-received principle holds that:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_7" value="a"><span class="option-key">A</span> Those with higher incomes should pay higher taxes</label>
+          <label class="option-label"><input type="radio" name="q19_7" value="b"><span class="option-key">B</span> Taxpayers should contribute in proportion to the benefits they receive from public expenditures</label>
+          <label class="option-label"><input type="radio" name="q19_7" value="c"><span class="option-key">C</span> Government benefits should be distributed equally to all citizens</label>
+          <label class="option-label"><input type="radio" name="q19_7" value="d"><span class="option-key">D</span> Taxes should be based on wealth rather than income</label>
+        </div>
+        <div class="feedback" id="fb19_7"></div>
+      </div>
+
+      <div class="question-block" data-q="8">
+        <div class="question-num">Question 9</div>
+        <div class="question-text">Economic income is defined as:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_8" value="a"><span class="option-key">A</span> Total wages and salaries earned during the year</label>
+          <label class="option-label"><input type="radio" name="q19_8" value="b"><span class="option-key">B</span> Gross income minus standard deductions</label>
+          <label class="option-label"><input type="radio" name="q19_8" value="c"><span class="option-key">C</span> Consumption plus change in net worth</label>
+          <label class="option-label"><input type="radio" name="q19_8" value="d"><span class="option-key">D</span> After-tax disposable income</label>
+        </div>
+        <div class="feedback" id="fb19_8"></div>
+      </div>
+
+      <div class="question-block" data-q="9">
+        <div class="question-num">Question 10</div>
+        <div class="question-text">The voting paradox shows that majority-rule voting can produce:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_9" value="a"><span class="option-key">A</span> Outcomes that perfectly reflect individual preferences</label>
+          <label class="option-label"><input type="radio" name="q19_9" value="b"><span class="option-key">B</span> Intransitive or inconsistent results (A&gt;B, B&gt;C, yet C&gt;A)</label>
+          <label class="option-label"><input type="radio" name="q19_9" value="c"><span class="option-key">C</span> Always the most efficient allocation of public resources</label>
+          <label class="option-label"><input type="radio" name="q19_9" value="d"><span class="option-key">D</span> Results independent of who sets the agenda</label>
+        </div>
+        <div class="feedback" id="fb19_9"></div>
+      </div>
+
+      <div class="question-block" data-q="10">
+        <div class="question-num">Question 11</div>
+        <div class="question-text">A retail sales tax is considered regressive because:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_10" value="a"><span class="option-key">A</span> Higher-income households buy more goods in absolute terms</label>
+          <label class="option-label"><input type="radio" name="q19_10" value="b"><span class="option-key">B</span> Lower-income households spend a larger fraction of income on taxable goods, so the tax takes a larger share of their income</label>
+          <label class="option-label"><input type="radio" name="q19_10" value="c"><span class="option-key">C</span> The tax rate increases with the value of purchases</label>
+          <label class="option-label"><input type="radio" name="q19_10" value="d"><span class="option-key">D</span> It is levied only on luxury goods</label>
+        </div>
+        <div class="feedback" id="fb19_10"></div>
+      </div>
+
+      <div class="question-block" data-q="11">
+        <div class="question-num">Question 12</div>
+        <div class="question-text">The principle of second best implies that a Pigouvian pollution tax:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q19_11" value="a"><span class="option-key">A</span> Always creates excess burden because it distorts output decisions</label>
+          <label class="option-label"><input type="radio" name="q19_11" value="b"><span class="option-key">B</span> Creates an efficiency gain, not an excess burden, because it corrects a prior market distortion</label>
+          <label class="option-label"><input type="radio" name="q19_11" value="c"><span class="option-key">C</span> Should never be used because all distorting taxes reduce welfare</label>
+          <label class="option-label"><input type="radio" name="q19_11" value="d"><span class="option-key">D</span> Is equivalent to a cap-and-trade system in all respects</label>
+        </div>
+        <div class="feedback" id="fb19_11"></div>
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn btn-primary" onclick="submitQuiz('19')">Submit Quiz</button>
+        <button class="btn btn-outline" onclick="resetQuiz('19')">Reset</button>
+      </div>
+      <div class="result-banner" id="result19">
+        <div><div class="result-score">Score: <span id="score19-num"></span> / 12</div><div class="result-msg" id="result19-msg"></div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 20 — Introduction to Macroeconomics</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">ECON F211</a>
+    <ul class="nav-links">
+      <li><a href="ch16.html">Ch 16</a></li>
+      <li><a href="ch19.html">Ch 19</a></li>
+      <li><a href="ch20.html" class="active">Ch 20</a></li>
+      <li><a href="ch21.html">Ch 21</a></li>
+      <li><a href="final-quiz.html">Final Quiz</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <header class="ch-hero">
+    <div class="chapter-num">Chapter 20</div>
+    <h1>Introduction to Macroeconomics</h1>
+    <p>From individual markets to the economy as a whole — output, unemployment, inflation, and the policy tools that shape them.</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#concerns">The Three Primary Concerns</a></li>
+      <li><a href="#business-cycle">Business Cycle: Peaks, Troughs, Recessions</a></li>
+      <li><a href="#components">Components of the Macroeconomy</a></li>
+      <li><a href="#circular-flow">The Circular Flow Diagram</a></li>
+      <li><a href="#market-arenas">The Three Market Arenas</a></li>
+      <li><a href="#government-role">Government: Fiscal and Monetary Policy</a></li>
+      <li><a href="#history">Brief History of Macroeconomics</a></li>
+      <li><a href="#since1970">The U.S. Economy Since 1970</a></li>
+      <li><a href="#terms20">Key Terms</a></li>
+      <li><a href="#quiz20">Chapter Quiz</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. THREE CONCERNS -->
+  <section class="content-section" id="concerns">
+    <h2>1 · The Three Primary Concerns of Macroeconomics</h2>
+
+    <p><strong>Macroeconomics</strong> deals with the economy as a whole — total national income, aggregate consumption and investment, and the overall price level — in contrast to <strong>microeconomics</strong>, which examines individual industries and decision-making units (firms and households).</p>
+
+    <p>A key reason macroeconomics emerged as a distinct field is <strong>sticky prices</strong>: some prices do not adjust rapidly to clear markets. In a single apple market, a surplus quickly drives price down. But in the aggregate labour market, wages can remain above market-clearing levels, producing persistent unemployment — a puzzle that classical microeconomic models could not explain.</p>
+
+    <p>Government policy makers pursue three macroeconomic goals — which often conflict:</p>
+
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Output Growth</div>
+        <div class="term-def">Sustained increase in real aggregate output (real GDP). The economy experiences short-run ups and downs — the <em>business cycle</em> — around a long-run growth trend.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Low Unemployment</div>
+        <div class="term-def">The unemployment rate (% of labour force unemployed) is a key indicator of economic health. Some positive unemployment is inevitable in a dynamic economy (frictional, structural).</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Low Inflation</div>
+        <div class="term-def">Inflation = increase in overall price level. Deflation = decrease. Both prolonged inflation and deflation are harmful. Hyperinflation (Bolivia 1984–85: egg price rose from 3,000 to 10,000 pesos in a week) can destabilise governments.</div>
+      </div>
+    </div>
+
+    <div class="callout warning">
+      <div class="callout-label">Goal Conflicts</div>
+      Policies that reduce unemployment (stimulating demand) can push up inflation. Policies that lower inflation (contractionary) can increase unemployment. Understanding these trade-offs is central to macroeconomics.
+    </div>
+  </section>
+
+  <!-- 2. BUSINESS CYCLE -->
+  <section class="content-section" id="business-cycle">
+    <h2>2 · Business Cycle: Peaks, Troughs, Recessions</h2>
+
+    <p>Economies don't grow smoothly — they experience <strong>business cycles</strong>: short-term fluctuations in aggregate output around a long-run trend.</p>
+
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Aggregate Output</div><div class="term-def">Total quantity of goods and services produced in an economy in a given period. The main measure of how the economy is doing.</div></div>
+      <div class="term-card"><div class="term-name">Recession</div><div class="term-def">Aggregate output declines for two consecutive quarters. Firms lay off workers; unemployment rises.</div></div>
+      <div class="term-card"><div class="term-name">Depression</div><div class="term-def">Prolonged and deep recession. The U.S. had one in the 1930s.</div></div>
+      <div class="term-card"><div class="term-name">Expansion / Boom</div><div class="term-def">Period from trough to peak. Output and employment grow.</div></div>
+      <div class="term-card"><div class="term-name">Contraction / Slump</div><div class="term-def">Period from peak to trough. Output and employment fall.</div></div>
+      <div class="term-card"><div class="term-name">Peak</div><div class="term-def">Highest point of the business cycle before a contraction begins.</div></div>
+      <div class="term-card"><div class="term-name">Trough</div><div class="term-def">Lowest point of the business cycle before expansion begins.</div></div>
+    </div>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 20.1 — A Typical Business Cycle</div>
+      <svg viewBox="0 0 580 260" width="100%" style="max-width:580px;display:block;margin:0 auto;" aria-label="Business cycle diagram">
+        <defs>
+          <marker id="arr5" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#7a7570"/>
+          </marker>
+        </defs>
+        <!-- Axes -->
+        <line x1="50" y1="220" x2="550" y2="220" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr5)"/>
+        <line x1="50" y1="220" x2="50" y2="20" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr5)"/>
+        <text x="552" y="230" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Time</text>
+        <text x="4" y="18" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Output</text>
+
+        <!-- Trend line (upward) -->
+        <line x1="55" y1="190" x2="540" y2="60" stroke="#3a4070" stroke-width="1" stroke-dasharray="6,4"/>
+        <text x="510" y="54" fill="#3a4070" font-size="11" font-family="'Lora',serif" font-style="italic">Trend</text>
+
+        <!-- Business cycle wave (smooth path over trend) -->
+        <!-- Trough1(100,190), Expansion to Peak1(220,100), Contraction to Trough2(330,160), Expansion to Peak2(450,70), Contraction to end(540,120) -->
+        <path d="M 80,195 C 120,200 160,80 220,85 C 280,90 300,175 340,155 C 380,135 420,45 470,50 C 510,55 530,120 545,110"
+              stroke="#c9a84c" stroke-width="2.5" fill="none"/>
+
+        <!-- Trough 1 -->
+        <circle cx="100" cy="197" r="4" fill="#6b8cba"/>
+        <text x="100" y="215" fill="#6b8cba" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">Trough</text>
+
+        <!-- Peak 1 -->
+        <circle cx="222" cy="84" r="4" fill="#c9a84c"/>
+        <text x="222" y="72" fill="#c9a84c" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">Peak</text>
+
+        <!-- Trough 2 -->
+        <circle cx="340" cy="155" r="4" fill="#6b8cba"/>
+        <text x="340" y="172" fill="#6b8cba" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">Trough</text>
+
+        <!-- Peak 2 -->
+        <circle cx="468" cy="50" r="4" fill="#c9a84c"/>
+        <text x="468" y="38" fill="#c9a84c" font-size="10" font-family="'JetBrains Mono',monospace" text-anchor="middle">Peak</text>
+
+        <!-- Expansion label -->
+        <text x="160" y="155" fill="#5a9e72" font-size="12" font-family="'Lora',serif" font-style="italic">Expansion →</text>
+
+        <!-- Recession label -->
+        <text x="255" y="115" fill="#9e5a5a" font-size="12" font-family="'Lora',serif" font-style="italic">← Recession</text>
+
+        <!-- Point A and B labels -->
+        <text x="140" y="148" fill="#ddd8cc" font-size="11" font-family="'JetBrains Mono',monospace">A</text>
+        <text x="278" y="122" fill="#ddd8cc" font-size="11" font-family="'JetBrains Mono',monospace">B</text>
+      </svg>
+      <div class="diagram-caption">At point A (early expansion), output is growing (positive rate of change) but still at a low level. At point B (early contraction), output is falling but still at a high level.</div>
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">Level vs. Rate of Change</div>
+      If the economy just left a trough (point A), it is <em>growing</em> (positive rate of change) but its level is still low. If it just turned from a peak (point B), output is <em>falling</em> but the level remains high. Don't confuse whether output is high with whether it's rising.
+    </div>
+
+    <p>U.S. recessions since WWII: 1946, 1954, 1958, 1974–75, 1980–82, 1990–91, 2001, and 2008–09. Cycles before WWII were more extreme; the 2008–09 recovery was unusually slow.</p>
+  </section>
+
+  <!-- 3. COMPONENTS -->
+  <section class="content-section" id="components">
+    <h2>3 · Components of the Macroeconomy</h2>
+
+    <p>The macroeconomy has four broad groups of participants:</p>
+    <ul>
+      <li><strong>Households</strong> — earn income, spend on goods/services, save, pay taxes</li>
+      <li><strong>Firms</strong> — produce output, pay wages, invest, pay taxes</li>
+      <li><strong>Government</strong> — collects taxes, purchases goods/services, makes transfer payments, sets policy</li>
+      <li><strong>Rest of the World</strong> — buys exports, sells imports</li>
+    </ul>
+
+    <p>The <em>private sector</em> = households + firms. The <em>public sector</em> = government. The <em>foreign sector</em> = rest of the world.</p>
+  </section>
+
+  <!-- 4. CIRCULAR FLOW -->
+  <section class="content-section" id="circular-flow">
+    <h2>4 · The Circular Flow Diagram</h2>
+
+    <p>The <strong>circular flow diagram</strong> shows the flows of income and payments among the four groups. Key principle: <em>every expenditure is someone else's receipt.</em></p>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 20.3 — Circular Flow of Payments</div>
+      <svg viewBox="0 0 580 380" width="100%" style="max-width:580px;display:block;margin:0 auto;" aria-label="Circular flow diagram">
+        <!-- Households box -->
+        <rect x="210" y="20" width="160" height="60" rx="4" fill="#1e2233" stroke="#c9a84c" stroke-width="1.5"/>
+        <text x="290" y="46" fill="#c9a84c" font-size="14" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Households</text>
+        <text x="290" y="64" fill="#b8b2a4" font-size="11" font-family="'Lora',serif" text-anchor="middle">Private Sector</text>
+
+        <!-- Firms box -->
+        <rect x="210" y="300" width="160" height="60" rx="4" fill="#1e2233" stroke="#6b8cba" stroke-width="1.5"/>
+        <text x="290" y="326" fill="#6b8cba" font-size="14" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Firms</text>
+        <text x="290" y="344" fill="#b8b2a4" font-size="11" font-family="'Lora',serif" text-anchor="middle">Private Sector</text>
+
+        <!-- Government box -->
+        <rect x="20" y="160" width="130" height="60" rx="4" fill="#1e2233" stroke="#5a9e72" stroke-width="1.5"/>
+        <text x="85" y="186" fill="#5a9e72" font-size="13" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Government</text>
+        <text x="85" y="204" fill="#b8b2a4" font-size="11" font-family="'Lora',serif" text-anchor="middle">Public Sector</text>
+
+        <!-- Rest of World box -->
+        <rect x="430" y="160" width="130" height="60" rx="4" fill="#1e2233" stroke="#9e5a5a" stroke-width="1.5"/>
+        <text x="495" y="183" fill="#9e5a5a" font-size="12" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">Rest of</text>
+        <text x="495" y="200" fill="#9e5a5a" font-size="12" font-family="'Playfair Display',serif" font-weight="600" text-anchor="middle">World</text>
+
+        <!-- Arrows: Households → Firms (spending on goods) right side going down -->
+        <path d="M 380,60 Q 430,60 430,190 Q 430,300 380,330" stroke="#6b8cba" stroke-width="1.5" fill="none" marker-end="url(#arr5)" stroke-dasharray="4,3"/>
+        <text x="436" y="200" fill="#6b8cba" font-size="10" font-family="'Lora',serif" font-style="italic">Spending on</text>
+        <text x="436" y="213" fill="#6b8cba" font-size="10" font-family="'Lora',serif" font-style="italic">goods &amp; svcs</text>
+
+        <!-- Firms → Households (wages, dividends, interest) left side going up -->
+        <path d="M 210,330 Q 160,330 160,190 Q 160,60 210,60" stroke="#c9a84c" stroke-width="1.5" fill="none" marker-end="url(#arr5)" stroke-dasharray="4,3"/>
+        <text x="62" y="183" fill="#c9a84c" font-size="10" font-family="'Lora',serif" font-style="italic" text-anchor="middle">Wages, interest,</text>
+        <text x="62" y="196" fill="#c9a84c" font-size="10" font-family="'Lora',serif" font-style="italic" text-anchor="middle">dividends, profits</text>
+
+        <!-- Households ↔ Government: taxes down left, transfers/wages up right -->
+        <path d="M 210,50 Q 85,50 85,160" stroke="#5a9e72" stroke-width="1.5" fill="none" marker-end="url(#arr5)"/>
+        <text x="128" y="95" fill="#5a9e72" font-size="9" font-family="'Lora',serif" font-style="italic">Taxes</text>
+
+        <path d="M 85,220 Q 85,330 210,330" stroke="#5a9e72" stroke-width="1.5" fill="none" marker-end="url(#arr5)"/>
+        <text x="88" y="295" fill="#5a9e72" font-size="9" font-family="'Lora',serif" font-style="italic">Purchases,</text>
+        <text x="88" y="308" fill="#5a9e72" font-size="9" font-family="'Lora',serif" font-style="italic">transfers</text>
+
+        <!-- Rest of World ↔ Firms: exports / imports -->
+        <path d="M 430,330 Q 495,330 495,220" stroke="#9e5a5a" stroke-width="1.5" fill="none" marker-end="url(#arr5)"/>
+        <text x="490" y="300" fill="#9e5a5a" font-size="9" font-family="'Lora',serif" font-style="italic">Exports</text>
+
+        <path d="M 495,160 Q 495,50 380,50" stroke="#9e5a5a" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arr5)"/>
+        <text x="470" y="88" fill="#9e5a5a" font-size="9" font-family="'Lora',serif" font-style="italic">Imports</text>
+
+        <!-- Center label -->
+        <text x="290" y="187" fill="#7a7570" font-size="11" font-family="'Lora',serif" font-style="italic" text-anchor="middle">Factor &amp; Product</text>
+        <text x="290" y="202" fill="#7a7570" font-size="11" font-family="'Lora',serif" font-style="italic" text-anchor="middle">Markets</text>
+      </svg>
+      <div class="diagram-caption">Every payment by one sector is income for another. Household saving and taxes are "leakages" from the circular flow; government spending and investment are "injections."</div>
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">Transfer Payments</div>
+      <strong>Transfer payments</strong> (Social Security, veterans' benefits, welfare) are cash payments by government to people who supply no goods or services in return. They appear in the circular flow as flows from government to households but are NOT included in GDP (not payments for current production).
+    </div>
+  </section>
+
+  <!-- 5. MARKET ARENAS -->
+  <section class="content-section" id="market-arenas">
+    <h2>5 · The Three Market Arenas</h2>
+
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Goods-and-Services Market</div>
+        <div class="term-def">Households, government, and firms buy final goods and services. Firms supply; households, government, and the rest of the world demand. Includes exports and imports.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Labour Market</div>
+        <div class="term-def">Firms and government buy labour from households. Households supply labour. Labour is increasingly international (migrant workers, call centres abroad).</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Money (Financial) Market</div>
+        <div class="term-def">Households buy stocks and bonds from firms; lend to firms, government, and each other. Coordinated by banks, insurance companies, and other financial institutions. Key variable: the interest rate.</div>
+      </div>
+    </div>
+
+    <h3>Key Financial Instruments</h3>
+    <ul>
+      <li><strong>Treasury bonds/notes/bills:</strong> Promissory notes issued by the federal government when borrowing.</li>
+      <li><strong>Corporate bonds:</strong> Promissory notes issued by corporations.</li>
+      <li><strong>Shares of stock:</strong> Give the holder part ownership in a firm — rights to a share of profits (dividends) and capital gains if the stock price rises.</li>
+    </ul>
+  </section>
+
+  <!-- 6. GOVERNMENT ROLE -->
+  <section class="content-section" id="government-role">
+    <h2>6 · Government: Fiscal and Monetary Policy</h2>
+
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Fiscal Policy</div>
+        <div class="term-def">Government decisions about <em>taxing and spending</em>. Expansionary = cut taxes or increase spending. Contractionary = raise taxes or cut spending. Set by Congress and the President.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Monetary Policy</div>
+        <div class="term-def">Tools used by the Federal Reserve (the Fed) to control short-term interest rates. The Fed is the U.S. central bank. Chair has been called the second most powerful person in the U.S. after the President.</div>
+      </div>
+    </div>
+
+    <p>Both fiscal and monetary policy were actively used during the 2008–09 recession. The Fed played an especially expanded role in that crisis compared to previous recessions.</p>
+  </section>
+
+  <!-- 7. HISTORY -->
+  <section class="content-section" id="history">
+    <h2>7 · Brief History of Macroeconomics (1929–1970)</h2>
+
+    <h3>The Great Depression (1929–1939)</h3>
+    <p>The defining event that created macroeconomics as a field. By 1933, 13 million of 51 million workers were unemployed (25%+). U.S. output fell 27% from 1929 to 1933. Classical models predicted wages would fall, increasing labour demand and clearing the market. But unemployment persisted for nearly a decade. <em>Classical models failed.</em></p>
+
+    <h3>Keynes and The General Theory (1936)</h3>
+    <p>John Maynard Keynes published <em>The General Theory of Employment, Interest and Money</em> — one of the most important works in economics. Key arguments:</p>
+    <ul>
+      <li>Employment is determined not only by prices and wages but by the level of <strong>aggregate demand</strong> (total spending).</li>
+      <li>Wages may be sticky downward — markets don't always self-correct quickly.</li>
+      <li>Government can and should intervene: when private demand is low, fiscal stimulus can lift the economy out of recession.</li>
+    </ul>
+
+    <h3>Post-WWII Acceptance and Fine-Tuning (1950s–60s)</h3>
+    <p>Keynesian views gained influence. The <strong>Employment Act of 1946</strong> committed the U.S. government to preventing large declines in output and employment and established the President's Council of Economic Advisers. By the 1960s, Walter Heller popularised the idea of <strong>fine-tuning</strong> — actively using fiscal and monetary policy to keep the economy on a smooth growth path.</p>
+  </section>
+
+  <!-- 8. SINCE 1970 -->
+  <section class="content-section" id="since1970">
+    <h2>8 · The U.S. Economy Since 1970</h2>
+
+    <h3>Stagflation (1970s)</h3>
+    <p>The 1970s brought a challenge to Keynesian theory: <strong>stagflation</strong> — high unemployment and high inflation simultaneously. Classical Keynesian models had not predicted this could happen (inflation was supposed to accompany low unemployment). The 1973 and 1979 oil shocks (OPEC) triggered massive supply-side cost increases, raising prices while reducing output.</p>
+
+    <h3>Supply-Side Economics (1980s)</h3>
+    <p>The Reagan administration emphasised cutting taxes — particularly on high earners — and reducing regulation to stimulate the supply side of the economy (production capacity, incentives to work and invest). Some economists argued the economy had been suffering from demand management failures and excessive government intervention.</p>
+
+    <h3>New Classical Economics</h3>
+    <p>Starting in the 1970s, economists like Robert Lucas argued that households and firms form <em>rational expectations</em> — they anticipate policy and adjust immediately, making systematic government intervention ineffective. This challenged the Keynesian consensus.</p>
+
+    <div class="callout insight">
+      <div class="callout-label">Ongoing Debate</div>
+      Macroeconomics has no single dominant theory. Keynesian, monetarist, new classical, and new Keynesian schools each offer insights. Real-world policy blends all of them depending on circumstances.
+    </div>
+  </section>
+
+  <!-- KEY TERMS -->
+  <section class="content-section" id="terms20">
+    <h2>9 · Key Terms</h2>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Macroeconomics</div><div class="term-def">Study of the economy as a whole — total income, aggregate output, overall prices.</div></div>
+      <div class="term-card"><div class="term-name">Microeconomics</div><div class="term-def">Study of individual industries, firms, and households.</div></div>
+      <div class="term-card"><div class="term-name">Sticky Prices</div><div class="term-def">Prices that don't adjust rapidly enough to clear markets; a key reason for unemployment.</div></div>
+      <div class="term-card"><div class="term-name">Aggregate Output</div><div class="term-def">Total quantity of goods and services produced in an economy in a given period.</div></div>
+      <div class="term-card"><div class="term-name">Business Cycle</div><div class="term-def">Short-term ups and downs in aggregate output around a long-run trend.</div></div>
+      <div class="term-card"><div class="term-name">Recession</div><div class="term-def">Aggregate output declines for two consecutive quarters.</div></div>
+      <div class="term-card"><div class="term-name">Depression</div><div class="term-def">Prolonged and deep recession.</div></div>
+      <div class="term-card"><div class="term-name">Expansion / Boom</div><div class="term-def">Trough to peak: output and employment grow.</div></div>
+      <div class="term-card"><div class="term-name">Inflation</div><div class="term-def">Increase in the overall price level.</div></div>
+      <div class="term-card"><div class="term-name">Hyperinflation</div><div class="term-def">Very rapid increase in the overall price level.</div></div>
+      <div class="term-card"><div class="term-name">Deflation</div><div class="term-def">Decrease in the overall price level.</div></div>
+      <div class="term-card"><div class="term-name">Circular Flow</div><div class="term-def">Diagram showing flows of payments among households, firms, government, and the rest of the world.</div></div>
+      <div class="term-card"><div class="term-name">Transfer Payments</div><div class="term-def">Government payments (Social Security, welfare) not in exchange for goods or services.</div></div>
+      <div class="term-card"><div class="term-name">Fiscal Policy</div><div class="term-def">Government decisions about taxing and spending.</div></div>
+      <div class="term-card"><div class="term-name">Monetary Policy</div><div class="term-def">Federal Reserve tools to control short-term interest rates.</div></div>
+      <div class="term-card"><div class="term-name">Great Depression</div><div class="term-def">1929–1939 economic catastrophe that gave birth to macroeconomics.</div></div>
+      <div class="term-card"><div class="term-name">Aggregate Demand</div><div class="term-def">Total spending in the economy on final goods and services.</div></div>
+      <div class="term-card"><div class="term-name">Stagflation</div><div class="term-def">Simultaneous high inflation and high unemployment (1970s).</div></div>
+      <div class="term-card"><div class="term-name">Fine-Tuning</div><div class="term-def">1960s idea that government could continuously adjust policy to keep the economy stable.</div></div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz20">
+    <div class="quiz-header">
+      <h2>Chapter 20 Quiz</h2>
+      <div class="quiz-score-badge" id="score20">Score: —</div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progress</span><span id="prog20-text">0 / 12</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="prog20" style="width:0%"></div></div>
+    </div>
+
+    <div class="quiz-container" id="q20-container">
+
+      <div class="question-block" data-q="0">
+        <div class="question-num">Question 1</div>
+        <div class="question-text">Macroeconomics differs from microeconomics in that macroeconomics:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_0" value="a"><span class="option-key">A</span> Studies the behaviour of individual firms and households</label>
+          <label class="option-label"><input type="radio" name="q20_0" value="b"><span class="option-key">B</span> Deals with the economy as a whole, focusing on aggregates like total output and overall price levels</label>
+          <label class="option-label"><input type="radio" name="q20_0" value="c"><span class="option-key">C</span> Concerns itself only with government spending and taxation</label>
+          <label class="option-label"><input type="radio" name="q20_0" value="d"><span class="option-key">D</span> Focuses exclusively on international trade and exchange rates</label>
+        </div>
+        <div class="feedback" id="fb20_0"></div>
+      </div>
+
+      <div class="question-block" data-q="1">
+        <div class="question-num">Question 2</div>
+        <div class="question-text">By convention, a recession is defined as a period in which aggregate output:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_1" value="a"><span class="option-key">A</span> Declines for at least one month</label>
+          <label class="option-label"><input type="radio" name="q20_1" value="b"><span class="option-key">B</span> Declines for two consecutive quarters</label>
+          <label class="option-label"><input type="radio" name="q20_1" value="c"><span class="option-key">C</span> Falls below potential GDP by 5%</label>
+          <label class="option-label"><input type="radio" name="q20_1" value="d"><span class="option-key">D</span> Grows at less than 2% per year</label>
+        </div>
+        <div class="feedback" id="fb20_1"></div>
+      </div>
+
+      <div class="question-block" data-q="2">
+        <div class="question-num">Question 3</div>
+        <div class="question-text">In the circular flow model, transfer payments are flows:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_2" value="a"><span class="option-key">A</span> From households to firms in exchange for goods and services</label>
+          <label class="option-label"><input type="radio" name="q20_2" value="b"><span class="option-key">B</span> From the government to households not in exchange for goods, services, or labour</label>
+          <label class="option-label"><input type="radio" name="q20_2" value="c"><span class="option-key">C</span> From firms to government as corporate tax payments</label>
+          <label class="option-label"><input type="radio" name="q20_2" value="d"><span class="option-key">D</span> From the rest of the world to domestic firms as export revenue</label>
+        </div>
+        <div class="feedback" id="fb20_2"></div>
+      </div>
+
+      <div class="question-block" data-q="3">
+        <div class="question-num">Question 4</div>
+        <div class="question-text">The Federal Reserve conducts:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_3" value="a"><span class="option-key">A</span> Fiscal policy by setting tax rates and spending levels</label>
+          <label class="option-label"><input type="radio" name="q20_3" value="b"><span class="option-key">B</span> Monetary policy by controlling short-term interest rates</label>
+          <label class="option-label"><input type="radio" name="q20_3" value="c"><span class="option-key">C</span> Trade policy by setting tariffs on imports</label>
+          <label class="option-label"><input type="radio" name="q20_3" value="d"><span class="option-key">D</span> Regulatory policy by enforcing environmental standards</label>
+        </div>
+        <div class="feedback" id="fb20_3"></div>
+      </div>
+
+      <div class="question-block" data-q="4">
+        <div class="question-num">Question 5</div>
+        <div class="question-text">The period from a trough to a peak in the business cycle is called:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_4" value="a"><span class="option-key">A</span> Contraction or recession</label>
+          <label class="option-label"><input type="radio" name="q20_4" value="b"><span class="option-key">B</span> Deflation</label>
+          <label class="option-label"><input type="radio" name="q20_4" value="c"><span class="option-key">C</span> Expansion or boom</label>
+          <label class="option-label"><input type="radio" name="q20_4" value="d"><span class="option-key">D</span> Stagflation</label>
+        </div>
+        <div class="feedback" id="fb20_4"></div>
+      </div>
+
+      <div class="question-block" data-q="5">
+        <div class="question-num">Question 6</div>
+        <div class="question-text">Keynes argued that government could lift an economy out of recession by:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_5" value="a"><span class="option-key">A</span> Reducing the money supply to fight inflation</label>
+          <label class="option-label"><input type="radio" name="q20_5" value="b"><span class="option-key">B</span> Stimulating aggregate demand through increased government spending or tax cuts</label>
+          <label class="option-label"><input type="radio" name="q20_5" value="c"><span class="option-key">C</span> Waiting for wages and prices to fall and the market to self-correct</label>
+          <label class="option-label"><input type="radio" name="q20_5" value="d"><span class="option-key">D</span> Imposing tariffs on imports to boost domestic production</label>
+        </div>
+        <div class="feedback" id="fb20_5"></div>
+      </div>
+
+      <div class="question-block" data-q="6">
+        <div class="question-num">Question 7</div>
+        <div class="question-text">Stagflation, experienced in the 1970s, refers to:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_6" value="a"><span class="option-key">A</span> Very rapid economic growth combined with falling unemployment</label>
+          <label class="option-label"><input type="radio" name="q20_6" value="b"><span class="option-key">B</span> Stagnant output growth combined with high inflation and unemployment simultaneously</label>
+          <label class="option-label"><input type="radio" name="q20_6" value="c"><span class="option-key">C</span> Deflation occurring alongside a recession</label>
+          <label class="option-label"><input type="radio" name="q20_6" value="d"><span class="option-key">D</span> A period of zero inflation but positive output growth</label>
+        </div>
+        <div class="feedback" id="fb20_6"></div>
+      </div>
+
+      <div class="question-block" data-q="7">
+        <div class="question-num">Question 8</div>
+        <div class="question-text">Sticky prices are important in macroeconomics because they help explain why:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_7" value="a"><span class="option-key">A</span> Inflation always stays below 2% in developed economies</label>
+          <label class="option-label"><input type="radio" name="q20_7" value="b"><span class="option-key">B</span> Markets can remain out of equilibrium — such as persistent unemployment — for extended periods</label>
+          <label class="option-label"><input type="radio" name="q20_7" value="c"><span class="option-key">C</span> Fiscal policy is always more effective than monetary policy</label>
+          <label class="option-label"><input type="radio" name="q20_7" value="d"><span class="option-key">D</span> GDP growth is always positive in the long run</label>
+        </div>
+        <div class="feedback" id="fb20_7"></div>
+      </div>
+
+      <div class="question-block" data-q="8">
+        <div class="question-num">Question 9</div>
+        <div class="question-text">The Employment Act of 1946 committed the U.S. government to:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_8" value="a"><span class="option-key">A</span> Balanced budgets in all fiscal years</label>
+          <label class="option-label"><input type="radio" name="q20_8" value="b"><span class="option-key">B</span> Preventing large declines in output and employment through active government intervention</label>
+          <label class="option-label"><input type="radio" name="q20_8" value="c"><span class="option-key">C</span> Zero inflation by giving the Federal Reserve independence</label>
+          <label class="option-label"><input type="radio" name="q20_8" value="d"><span class="option-key">D</span> Fixed exchange rates with all major trading partners</label>
+        </div>
+        <div class="feedback" id="fb20_8"></div>
+      </div>
+
+      <div class="question-block" data-q="9">
+        <div class="question-num">Question 10</div>
+        <div class="question-text">In the money (financial) market, which of the following best describes the role of households?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_9" value="a"><span class="option-key">A</span> Households only borrow from this market and never supply funds</label>
+          <label class="option-label"><input type="radio" name="q20_9" value="b"><span class="option-key">B</span> Households supply funds by buying stocks and bonds, and also demand funds by borrowing</label>
+          <label class="option-label"><input type="radio" name="q20_9" value="c"><span class="option-key">C</span> Households are excluded from financial markets, which are for firms only</label>
+          <label class="option-label"><input type="radio" name="q20_9" value="d"><span class="option-key">D</span> Households set the interest rate in financial markets through their savings decisions</label>
+        </div>
+        <div class="feedback" id="fb20_9"></div>
+      </div>
+
+      <div class="question-block" data-q="10">
+        <div class="question-num">Question 11</div>
+        <div class="question-text">An expansionary fiscal policy involves:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_10" value="a"><span class="option-key">A</span> The Federal Reserve raising interest rates</label>
+          <label class="option-label"><input type="radio" name="q20_10" value="b"><span class="option-key">B</span> The government cutting taxes or increasing spending</label>
+          <label class="option-label"><input type="radio" name="q20_10" value="c"><span class="option-key">C</span> The government raising taxes and cutting spending</label>
+          <label class="option-label"><input type="radio" name="q20_10" value="d"><span class="option-key">D</span> The Federal Reserve reducing the money supply</label>
+        </div>
+        <div class="feedback" id="fb20_10"></div>
+      </div>
+
+      <div class="question-block" data-q="11">
+        <div class="question-num">Question 12</div>
+        <div class="question-text">Classical economists before Keynes argued that persistent unemployment was impossible because:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q20_11" value="a"><span class="option-key">A</span> Government could always eliminate it through fiscal policy</label>
+          <label class="option-label"><input type="radio" name="q20_11" value="b"><span class="option-key">B</span> Excess labour supply would drive wages down until the labour market cleared</label>
+          <label class="option-label"><input type="radio" name="q20_11" value="c"><span class="option-key">C</span> Workers always accept any wage offered by employers</label>
+          <label class="option-label"><input type="radio" name="q20_11" value="d"><span class="option-key">D</span> Monetary policy could always restore full employment within one quarter</label>
+        </div>
+        <div class="feedback" id="fb20_11"></div>
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn btn-primary" onclick="submitQuiz('20')">Submit Quiz</button>
+        <button class="btn btn-outline" onclick="resetQuiz('20')">Reset</button>
+      </div>
+      <div class="result-banner" id="result20">
+        <div><div class="result-score">Score: <span id="score20-num"></span> / 12</div><div class="result-msg" id="result20-msg"></div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 16 — Externalities, Public Goods &amp; Common Resources</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">ECON F211</a>
+    <ul class="nav-links">
+      <li><a href="ch16.html" class="active">Ch 16</a></li>
+      <li><a href="ch19.html">Ch 19</a></li>
+      <li><a href="ch20.html">Ch 20</a></li>
+      <li><a href="ch21.html">Ch 21</a></li>
+      <li><a href="final-quiz.html">Final Quiz</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrap">
+  <header class="ch-hero">
+    <div class="chapter-num">Chapter 16</div>
+    <h1>Externalities, Public Goods &amp; Common Resources</h1>
+    <p>How markets fail when third-party costs or benefits go unpriced — and what governments can do about it.</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#externalities">Externalities and Environmental Economics</a></li>
+      <li><a href="#negative">Negative Externalities and Overproduction</a></li>
+      <li><a href="#optimal-pollution">Optimal Pollution Level</a></li>
+      <li><a href="#internalizing">Internalizing Externalities</a></li>
+      <li><a href="#positive">Positive Externalities and Underproduction</a></li>
+      <li><a href="#public-goods">Public Goods</a></li>
+      <li><a href="#common">Common Resources</a></li>
+      <li><a href="#terms">Key Terms</a></li>
+      <li><a href="#quiz16">Chapter Quiz</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. EXTERNALITIES -->
+  <section class="content-section" id="externalities">
+    <h2>1 · Externalities and Environmental Economics</h2>
+
+    <p>An <strong>externality</strong> exists when the actions or decisions of one person or group impose a cost or bestow a benefit on second or third parties. Externalities are also called <em>spillovers</em> or <em>neighborhood effects</em>. When decision makers fail to consider these social costs and benefits, inefficient decisions result.</p>
+
+    <p>Externalities are pervasive: air, water, and noise pollution; traffic congestion; secondhand cigarette smoke; global warming; and acid rain are all examples. The study of externalities is the core concern of <strong>environmental economics</strong>.</p>
+
+    <div class="callout insight">
+      <div class="callout-label">Key Insight</div>
+      The central problem with externalities: some costs (or benefits) are <em>external</em> to the decision maker's private calculation, so the market equilibrium diverges from the socially optimal outcome.
+    </div>
+  </section>
+
+  <!-- 2. NEGATIVE EXTERNALITIES -->
+  <section class="content-section" id="negative">
+    <h2>2 · Negative Externalities and Overproduction</h2>
+
+    <p>When a firm dumps wastewater into a river or emits carbon while producing steel, it imposes costs on society that are not reflected in its private cost calculation. The <strong>marginal social cost (MSC)</strong> is the true total cost to society of producing one more unit — the sum of private marginal cost (MC) and the marginal external cost.</p>
+
+    <div class="formula-box">
+      <div class="label">Relationship</div>
+      <div class="formula">MSC = MC + Marginal External Cost</div>
+      <div class="note">When there are no externalities, MSC = MC and private output is efficient.</div>
+    </div>
+
+    <p>Without being charged for external costs, a firm produces at \(q^*\) where \(P = MC\), and the industry produces \(Q^*\). But the socially optimal output is \(Q^{**}\) where \(P = MSC\). The industry <em>overproduces</em> by \(Q^* - Q^{**}\). The deadweight loss (triangle ABC in the diagram below) represents the efficiency loss from overproduction.</p>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 16.1 — Negative Externality: Overproduction</div>
+      <svg viewBox="0 0 600 320" width="100%" style="max-width:600px;display:block;margin:0 auto;" aria-label="Negative externality diagram">
+        <defs>
+          <marker id="arrowhead" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#7a7570"/>
+          </marker>
+        </defs>
+        <!-- Axes -->
+        <line x1="60" y1="280" x2="560" y2="280" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <line x1="60" y1="280" x2="60" y2="30" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+        <!-- Axis labels -->
+        <text x="560" y="298" fill="#7a7570" font-size="12" font-family="'JetBrains Mono',monospace">Q</text>
+        <text x="22" y="28" fill="#7a7570" font-size="12" font-family="'JetBrains Mono',monospace">P ($)</text>
+
+        <!-- Demand curve D (downward slope) -->
+        <line x1="120" y1="60" x2="500" y2="260" stroke="#6b8cba" stroke-width="2"/>
+        <text x="506" y="258" fill="#6b8cba" font-size="13" font-family="'Lora',serif" font-style="italic">D</text>
+
+        <!-- MC (Supply S) curve upward -->
+        <line x1="120" y1="240" x2="440" y2="80" stroke="#5a9e72" stroke-width="2"/>
+        <text x="445" y="78" fill="#5a9e72" font-size="13" font-family="'Lora',serif" font-style="italic">MC (S)</text>
+
+        <!-- MSC curve (above MC by external cost) -->
+        <line x1="120" y1="180" x2="420" y2="50" stroke="#c9a84c" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="424" y="48" fill="#c9a84c" font-size="13" font-family="'Lora',serif" font-style="italic">MSC (S')</text>
+
+        <!-- Equilibrium Q* — intersection of D and MC at approx x=310 -->
+        <!-- D: y = 60 + (200/380)*(x-120)  at x=310: y=60+190*0.526=160 -->
+        <!-- MC: y = 240 - (160/320)*(x-120) at x=310: y=240-190*0.5=145 → approx x=320 -->
+        <!-- Let's pick Q* = x:360, y:180 (D and MC cross) -->
+        <!-- D at x=360: 60 + (200/380)*240 = 60+126=186. MC at x=360: 240-(160/320)*240=240-120=120 → not right -->
+        <!-- Simplified: just draw reference lines at logical positions -->
+
+        <!-- P** (MSC=D intersection) vertical at x=285, P=155 -->
+        <line x1="285" y1="155" x2="285" y2="280" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,3"/>
+        <!-- P* (MC=D intersection) vertical at x=355, P=188 -->
+        <line x1="355" y1="185" x2="355" y2="280" stroke="#5a9e72" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <!-- Horizontal P** -->
+        <line x1="60" y1="155" x2="285" y2="155" stroke="#c9a84c" stroke-width="1" stroke-dasharray="3,3"/>
+        <!-- Horizontal P* -->
+        <line x1="60" y1="185" x2="355" y2="185" stroke="#5a9e72" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <!-- Labels -->
+        <text x="40" y="159" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="end">P**</text>
+        <text x="40" y="190" fill="#5a9e72" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="end">P*</text>
+        <text x="283" y="296" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="middle">Q**</text>
+        <text x="355" y="296" fill="#5a9e72" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="middle">Q*</text>
+
+        <!-- DWL triangle shading -->
+        <!-- Triangle: D-MC intersection at Q* (355,185), MSC-D at Q** (285,155), and the MC-MSC gap at Q** -->
+        <!-- approximate triangle: (285,155) → (355,185) → (285,185) ish, but better A,B,C triangle -->
+        <!-- A = MSC∩D at (285,155), B = MC∩D at (355,185), C = MSC at x=355 ~(355,155) -->
+        <polygon points="285,155 355,155 355,185" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+        <text x="330" y="172" fill="#c9a84c" font-size="11" font-family="'Lora',serif" font-style="italic">DWL</text>
+
+        <!-- Marginal external cost bracket -->
+        <line x1="570" y1="155" x2="570" y2="185" stroke="#d4874a" stroke-width="1.5"/>
+        <line x1="565" y1="155" x2="575" y2="155" stroke="#d4874a" stroke-width="1.5"/>
+        <line x1="565" y1="185" x2="575" y2="185" stroke="#d4874a" stroke-width="1.5"/>
+        <text x="580" y="174" fill="#d4874a" font-size="11" font-family="'Lora',serif" font-style="italic" text-anchor="start">Ext. cost</text>
+      </svg>
+      <div class="diagram-caption">Without internalising external costs, the industry produces Q* instead of the socially optimal Q**. The shaded triangle is deadweight loss.</div>
+    </div>
+  </section>
+
+  <!-- 3. OPTIMAL POLLUTION -->
+  <section class="content-section" id="optimal-pollution">
+    <h2>3 · The Optimal Level of Pollution</h2>
+
+    <p>Contrary to instinct, the socially optimal level of pollution is <em>not</em> zero. Every unit of pollution has a <strong>marginal social cost (MSC)</strong> — health losses, lost recreation, ecosystem damage — and a <strong>marginal social benefit of pollution (MSB)</strong> — the value of the resources saved by not cleaning it up. Eliminating the last unit of carbon emissions might mean shutting down all factories; that sacrifice is enormous.</p>
+
+    <p>The optimal emission level \(Q^*\) is where \(MSB = MSC\): society uses its environment most efficiently, equating the value of the last unit of pollution to the harm it causes.</p>
+
+    <div class="diagram-wrap">
+      <div class="diagram-title">Figure 16.2 — Socially Optimal Pollution Level</div>
+      <svg viewBox="0 0 500 300" width="100%" style="max-width:500px;display:block;margin:0 auto;" aria-label="Optimal pollution diagram">
+        <defs>
+          <marker id="arr2" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto">
+            <polygon points="0 0, 6 2.5, 0 5" fill="#7a7570"/>
+          </marker>
+        </defs>
+        <line x1="60" y1="260" x2="470" y2="260" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <line x1="60" y1="260" x2="60" y2="30" stroke="#3a4070" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <text x="472" y="270" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">Emissions</text>
+        <text x="18" y="28" fill="#7a7570" font-size="11" font-family="'JetBrains Mono',monospace">$/unit</text>
+
+        <!-- MSC: upward sloping (as more pollution, cost rises) -->
+        <line x1="80" y1="220" x2="430" y2="60" stroke="#9e5a5a" stroke-width="2"/>
+        <text x="435" y="58" fill="#9e5a5a" font-size="13" font-family="'Lora',serif" font-style="italic">MSC</text>
+
+        <!-- MSB: downward sloping (benefit of polluting falls as emissions rise) -->
+        <line x1="80" y1="70" x2="430" y2="230" stroke="#5a9e72" stroke-width="2"/>
+        <text x="435" y="232" fill="#5a9e72" font-size="13" font-family="'Lora',serif" font-style="italic">MSB</text>
+
+        <!-- Intersection at ~(255, 145) -->
+        <line x1="255" y1="145" x2="255" y2="260" stroke="#c9a84c" stroke-width="1" stroke-dasharray="4,3"/>
+        <circle cx="255" cy="145" r="4" fill="#c9a84c"/>
+        <text x="255" y="278" fill="#c9a84c" font-size="12" font-family="'JetBrains Mono',monospace" text-anchor="middle">Q*</text>
+        <text x="258" y="130" fill="#c9a84c" font-size="12" font-family="'Lora',serif" font-style="italic">Social optimum</text>
+      </svg>
+      <div class="diagram-caption">At Q*, marginal social benefit of pollution equals marginal social cost. This is the efficient emission level — not zero.</div>
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">Why not zero pollution?</div>
+      Eliminating the last unit of pollution can be prohibitively costly (shutting down entire industries). The MSB curve captures this avoided cost. Zero emissions would mean MSB &gt; MSC — society is over-cleaning.
+    </div>
+  </section>
+
+  <!-- 4. INTERNALIZING -->
+  <section class="content-section" id="internalizing">
+    <h2>4 · Internalizing Externalities</h2>
+    <p>Four policy mechanisms can force decision makers to account for external costs:</p>
+
+    <h3>Private Bargaining — The Coase Theorem</h3>
+    <p>Ronald Coase (1960, Nobel 1991) showed that <em>under certain conditions</em>, private parties can reach the efficient outcome without government intervention, regardless of how property rights are initially assigned. The key is that both parties bargain until the marginal benefit of the externality equals the marginal cost to the victim.</p>
+
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Coase Theorem</div>
+        <div class="term-def">When property rights are clear and transaction costs are low, private bargaining will achieve the efficient outcome regardless of initial rights assignment.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Conditions for Coase</div>
+        <div class="term-def">(1) Clear property rights, (2) low/zero transaction costs, (3) few parties involved. Fails with large groups due to free-rider problems.</div>
+      </div>
+    </div>
+
+    <h3>Environmental Standards</h3>
+    <p>Governments set direct rules (e.g., the EPA, Clean Air Act) on allowable emissions. Standards are easy to enforce but often inefficient: they force uniform cuts regardless of each firm's abatement cost, resulting in higher total costs than necessary.</p>
+
+    <h3>Pigouvian Taxes and Subsidies</h3>
+    <p>A per-unit tax equal to the marginal external cost forces the firm to face MSC directly, shifting its supply curve up to S' and reducing output to the social optimum. This is called a <strong>Pigouvian tax</strong> (after A.C. Pigou).</p>
+    <p><strong>Advantage over standards:</strong> Taxes allow firms to choose their own abatement technology. Firms with cheap abatement cut more; those with expensive abatement cut less. Total emissions target is reached at minimum cost.</p>
+    <p>For <em>positive</em> externalities, subsidies increase output toward the social optimum.</p>
+
+    <h3>Cap-and-Trade (Tradeable Emissions Permits)</h3>
+    <p>The government sets a total cap on emissions and issues permits. Firms may trade permits in a market. Firms that can cut emissions cheaply do so and <em>sell</em> their excess permits. Firms with high abatement costs <em>buy</em> permits instead. Result: the target emission level is achieved at minimum total cost — identical to the tax outcome but using a market mechanism.</p>
+
+    <div class="callout example">
+      <div class="callout-label">Example — Cap-and-Trade Arithmetic</div>
+      Two firms each emit 5 units. Government caps total at 4 (each gets 2 permits). Firm A can abate cheaply ($5/unit first, $7/unit second, $12/unit third). Firm B abates expensively ($15, $19, $23/unit). Under a standard, each cuts 3 units: total abatement cost = $21 + $57 = $78. Under cap-and-trade, Firm A cuts to 1 unit (sells 1 permit to B). Firm B cuts to 3 units. If permit price = $12: Firm A spends $12 extra on abatement, earns $12 from permit sale. Firm B saves $23 by buying instead of abating. Total system cost is lower.
+    </div>
+  </section>
+
+  <!-- 5. POSITIVE EXTERNALITIES -->
+  <section class="content-section" id="positive">
+    <h2>5 · Positive Externalities and Underproduction</h2>
+    <p>When an activity generates external <em>benefits</em> to third parties, the marginal social benefit (MSB) exceeds the private benefit. Examples:</p>
+    <ul>
+      <li><strong>LoJack</strong>: Installing a theft-tracking device benefits not just the owner but all nearby car owners (deterrence). Buyers capture only ~10% of the value. Result: too few LoJacks are bought.</li>
+      <li><strong>Vaccination</strong>: Immunising one person reduces disease transmission for everyone. Private benefit understates social benefit → underprovision.</li>
+      <li><strong>Education</strong>: An educated workforce creates spillovers (lower crime, innovation). Society subsidises education partly for this reason.</li>
+    </ul>
+    <p>Without intervention, the market <em>underproduces</em> goods with positive externalities. The solution is subsidies equal to the marginal external benefit, shifting demand (from the firm's perspective) up to the MSB curve.</p>
+  </section>
+
+  <!-- 6. PUBLIC GOODS -->
+  <section class="content-section" id="public-goods">
+    <h2>6 · Public Goods</h2>
+
+    <p>A <strong>public good</strong> has two defining properties that distinguish it from private goods:</p>
+
+    <div class="term-grid">
+      <div class="term-card">
+        <div class="term-name">Nonrival in Consumption</div>
+        <div class="term-def">My consumption does not diminish your ability to consume it. National defense protects all citizens simultaneously. Contrast with a hamburger (private good): if I eat it, you cannot.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Nonexcludable</div>
+        <div class="term-def">Once produced, no one can be excluded from benefiting. You cannot charge people individually for national defense.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Free-Rider Problem</div>
+        <div class="term-def">Because you get the benefit whether or not you pay, rational individuals have no incentive to contribute voluntarily. Private production fails.</div>
+      </div>
+      <div class="term-card">
+        <div class="term-name">Drop-in-the-Bucket Problem</div>
+        <div class="term-def">Any single person's contribution is negligible relative to the total cost. This reinforces the incentive not to contribute.</div>
+      </div>
+    </div>
+
+    <div class="callout insight">
+      <div class="callout-label">Public ≠ Government-Produced</div>
+      A good is "public" because of its characteristics (nonrival + nonexcludable), not because the government provides it. A government could hand out free hamburgers — they remain private goods.
+    </div>
+
+    <h3>Public Provision of Public Goods</h3>
+    <p>Because private markets fail to provide public goods (no one will pay voluntarily; no firm can profit), government must step in. The demand for a public good is found by <em>vertically summing</em> individual willingness-to-pay curves (unlike private goods where demand curves are horizontally summed), because all individuals consume the same quantity simultaneously.</p>
+
+    <h3>Optimal Provision</h3>
+    <p>For a public good, the socially optimal quantity is where the sum of all individuals' marginal willingness to pay equals the marginal cost of provision:
+    \[ \sum_i MB_i = MC \]
+    If person A values unit \(X_1\) at $6 and person B values it at $3, society values it at $9. Provision is optimal up to the quantity where this sum equals MC.</p>
+  </section>
+
+  <!-- 7. COMMON RESOURCES -->
+  <section class="content-section" id="common">
+    <h2>7 · Common Resources</h2>
+    <p><strong>Common resources</strong> (open-access resources) are <em>rival</em> but <em>nonexcludable</em>. Fish in the ocean, public grazing land, and groundwater are examples. Because no one can be excluded, individuals overuse them — each user captures the full benefit but shares the cost of depletion.</p>
+    <p>This is the <strong>Tragedy of the Commons</strong> (Garrett Hardin, 1968): individually rational behaviour leads to collective overexploitation and eventual destruction of the resource.</p>
+
+    <div class="callout warning">
+      <div class="callout-label">The Four Good Types</div>
+      <table class="data-table" style="margin-top:8px">
+        <tr><th></th><th>Excludable</th><th>Nonexcludable</th></tr>
+        <tr><td>Rival</td><td>Private goods (food, cars)</td><td>Common resources (fish, groundwater)</td></tr>
+        <tr><td>Nonrival</td><td>Club goods (Netflix, toll roads)</td><td>Public goods (defense, lighthouses)</td></tr>
+      </table>
+    </div>
+
+    <p><strong>Solutions:</strong> privatisation (assign property rights), government regulation (fishing quotas), or community management (Elinor Ostrom's work on self-governing commons, Nobel 2009).</p>
+  </section>
+
+  <!-- 8. KEY TERMS -->
+  <section class="content-section" id="terms">
+    <h2>8 · Key Terms</h2>
+    <div class="term-grid">
+      <div class="term-card"><div class="term-name">Externality</div><div class="term-def">Cost or benefit imposed on third parties not involved in a transaction.</div></div>
+      <div class="term-card"><div class="term-name">Marginal Social Cost (MSC)</div><div class="term-def">Total cost to society of one more unit of output = MC + marginal external cost.</div></div>
+      <div class="term-card"><div class="term-name">Marginal Social Benefit of Pollution</div><div class="term-def">Benefit to society from one more unit of pollution — the cost saved by not abating.</div></div>
+      <div class="term-card"><div class="term-name">Coase Theorem</div><div class="term-def">Private bargaining achieves efficient outcome when rights are clear and transaction costs are low.</div></div>
+      <div class="term-card"><div class="term-name">Injunction</div><div class="term-def">Court order forbidding damage-producing behaviour.</div></div>
+      <div class="term-card"><div class="term-name">Liability Rules</div><div class="term-def">Laws requiring a party to compensate for damages caused.</div></div>
+      <div class="term-card"><div class="term-name">Cap-and-Trade</div><div class="term-def">Government sets emission cap; permits are tradeable so reductions happen where cheapest.</div></div>
+      <div class="term-card"><div class="term-name">Public Good</div><div class="term-def">Nonrival in consumption and nonexcludable. Markets underprovide or fail entirely.</div></div>
+      <div class="term-card"><div class="term-name">Nonrival</div><div class="term-def">A's consumption does not reduce B's — all can consume simultaneously.</div></div>
+      <div class="term-card"><div class="term-name">Nonexcludable</div><div class="term-def">Once produced, no one can be excluded from consuming the good.</div></div>
+      <div class="term-card"><div class="term-name">Free-Rider Problem</div><div class="term-def">Rational incentive to enjoy a public good without paying for it.</div></div>
+      <div class="term-card"><div class="term-name">Drop-in-the-Bucket</div><div class="term-def">One person's contribution is negligible; undermines voluntary provision.</div></div>
+      <div class="term-card"><div class="term-name">Common Resources</div><div class="term-def">Rival but nonexcludable — leads to overuse (Tragedy of the Commons).</div></div>
+    </div>
+  </section>
+
+  <!-- 9. QUIZ -->
+  <section class="quiz-section" id="quiz16">
+    <div class="quiz-header">
+      <h2>Chapter 16 Quiz</h2>
+      <div class="quiz-score-badge" id="score16">Score: —</div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Progress</span><span id="prog16-text">0 / 12</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="prog16" style="width:0%"></div></div>
+    </div>
+
+    <div class="quiz-container" id="q16-container">
+
+      <div class="question-block" data-q="0">
+        <div class="question-num">Question 1</div>
+        <div class="question-text">An externality is best defined as:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_0" value="a"><span class="option-key">A</span> A tax levied on firms that pollute the environment</label>
+          <label class="option-label"><input type="radio" name="q16_0" value="b"><span class="option-key">B</span> A cost or benefit imposed on parties not involved in a transaction</label>
+          <label class="option-label"><input type="radio" name="q16_0" value="c"><span class="option-key">C</span> Any government intervention in the marketplace</label>
+          <label class="option-label"><input type="radio" name="q16_0" value="d"><span class="option-key">D</span> A good that is both nonrival and nonexcludable</label>
+        </div>
+        <div class="feedback" id="fb16_0"></div>
+      </div>
+
+      <div class="question-block" data-q="1">
+        <div class="question-num">Question 2</div>
+        <div class="question-text">When firms with negative externalities are not charged for their external costs, they will:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_1" value="a"><span class="option-key">A</span> Underproduce relative to the social optimum</label>
+          <label class="option-label"><input type="radio" name="q16_1" value="b"><span class="option-key">B</span> Produce exactly the socially optimal quantity</label>
+          <label class="option-label"><input type="radio" name="q16_1" value="c"><span class="option-key">C</span> Overproduce relative to the social optimum</label>
+          <label class="option-label"><input type="radio" name="q16_1" value="d"><span class="option-key">D</span> Exit the market due to competition</label>
+        </div>
+        <div class="feedback" id="fb16_1"></div>
+      </div>
+
+      <div class="question-block" data-q="2">
+        <div class="question-num">Question 3</div>
+        <div class="question-text">Marginal social cost (MSC) equals:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_2" value="a"><span class="option-key">A</span> Marginal cost minus marginal external cost</label>
+          <label class="option-label"><input type="radio" name="q16_2" value="b"><span class="option-key">B</span> Marginal cost plus marginal external cost</label>
+          <label class="option-label"><input type="radio" name="q16_2" value="c"><span class="option-key">C</span> Average cost times quantity</label>
+          <label class="option-label"><input type="radio" name="q16_2" value="d"><span class="option-key">D</span> Price minus marginal external cost</label>
+        </div>
+        <div class="feedback" id="fb16_2"></div>
+      </div>
+
+      <div class="question-block" data-q="3">
+        <div class="question-num">Question 4</div>
+        <div class="question-text">The Coase Theorem states that private bargaining achieves an efficient outcome when:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_3" value="a"><span class="option-key">A</span> Government intervenes and assigns a Pigouvian tax</label>
+          <label class="option-label"><input type="radio" name="q16_3" value="b"><span class="option-key">B</span> Property rights are clearly defined and transaction costs are low</label>
+          <label class="option-label"><input type="radio" name="q16_3" value="c"><span class="option-key">C</span> There are many parties on each side of the dispute</label>
+          <label class="option-label"><input type="radio" name="q16_3" value="d"><span class="option-key">D</span> Government auctions pollution rights to the highest bidder</label>
+        </div>
+        <div class="feedback" id="fb16_3"></div>
+      </div>
+
+      <div class="question-block" data-q="4">
+        <div class="question-num">Question 5</div>
+        <div class="question-text">The socially optimal level of pollution is the quantity at which:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_4" value="a"><span class="option-key">A</span> Total pollution equals zero</label>
+          <label class="option-label"><input type="radio" name="q16_4" value="b"><span class="option-key">B</span> Marginal social benefit of pollution equals marginal social cost</label>
+          <label class="option-label"><input type="radio" name="q16_4" value="c"><span class="option-key">C</span> Total abatement cost equals total pollution damage</label>
+          <label class="option-label"><input type="radio" name="q16_4" value="d"><span class="option-key">D</span> All firms have installed pollution filters</label>
+        </div>
+        <div class="feedback" id="fb16_4"></div>
+      </div>
+
+      <div class="question-block" data-q="5">
+        <div class="question-num">Question 6</div>
+        <div class="question-text">Which of the following is a defining characteristic of a PUBLIC good?</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_5" value="a"><span class="option-key">A</span> It is produced by the government</label>
+          <label class="option-label"><input type="radio" name="q16_5" value="b"><span class="option-key">B</span> It is rival in consumption</label>
+          <label class="option-label"><input type="radio" name="q16_5" value="c"><span class="option-key">C</span> It is both nonrival in consumption and nonexcludable</label>
+          <label class="option-label"><input type="radio" name="q16_5" value="d"><span class="option-key">D</span> It generates negative externalities</label>
+        </div>
+        <div class="feedback" id="fb16_5"></div>
+      </div>
+
+      <div class="question-block" data-q="6">
+        <div class="question-num">Question 7</div>
+        <div class="question-text">The free-rider problem arises because:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_6" value="a"><span class="option-key">A</span> Public goods are too expensive to produce</label>
+          <label class="option-label"><input type="radio" name="q16_6" value="b"><span class="option-key">B</span> Individuals can consume a public good whether or not they pay for it</label>
+          <label class="option-label"><input type="radio" name="q16_6" value="c"><span class="option-key">C</span> Government refuses to subsidise private goods</label>
+          <label class="option-label"><input type="radio" name="q16_6" value="d"><span class="option-key">D</span> Firms overcharge for goods with externalities</label>
+        </div>
+        <div class="feedback" id="fb16_6"></div>
+      </div>
+
+      <div class="question-block" data-q="7">
+        <div class="question-num">Question 8</div>
+        <div class="question-text">Under a cap-and-trade system, if a firm can abate pollution cheaply, it will tend to:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_7" value="a"><span class="option-key">A</span> Buy additional permits from firms with high abatement costs</label>
+          <label class="option-label"><input type="radio" name="q16_7" value="b"><span class="option-key">C</span> Produce at the same level as before the cap</label>
+          <label class="option-label"><input type="radio" name="q16_7" value="c"><span class="option-key">C</span> Cut emissions below its permit level and sell excess permits</label>
+          <label class="option-label"><input type="radio" name="q16_7" value="d"><span class="option-key">D</span> Lobby to eliminate the permit system</label>
+        </div>
+        <div class="feedback" id="fb16_7"></div>
+      </div>
+
+      <div class="question-block" data-q="8">
+        <div class="question-num">Question 9</div>
+        <div class="question-text">The vaccination example illustrates:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_8" value="a"><span class="option-key">A</span> A negative externality leading to overproduction</label>
+          <label class="option-label"><input type="radio" name="q16_8" value="b"><span class="option-key">B</span> A positive externality leading to underproduction relative to the social optimum</label>
+          <label class="option-label"><input type="radio" name="q16_8" value="c"><span class="option-key">C</span> The tragedy of the commons</label>
+          <label class="option-label"><input type="radio" name="q16_8" value="d"><span class="option-key">D</span> A club good that requires excludability</label>
+        </div>
+        <div class="feedback" id="fb16_8"></div>
+      </div>
+
+      <div class="question-block" data-q="9">
+        <div class="question-num">Question 10</div>
+        <div class="question-text">Common resources — such as ocean fisheries — are:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_9" value="a"><span class="option-key">A</span> Nonrival and excludable</label>
+          <label class="option-label"><input type="radio" name="q16_9" value="b"><span class="option-key">B</span> Rival and nonexcludable</label>
+          <label class="option-label"><input type="radio" name="q16_9" value="c"><span class="option-key">C</span> Nonrival and nonexcludable</label>
+          <label class="option-label"><input type="radio" name="q16_9" value="d"><span class="option-key">D</span> Rival and excludable</label>
+        </div>
+        <div class="feedback" id="fb16_9"></div>
+      </div>
+
+      <div class="question-block" data-q="10">
+        <div class="question-num">Question 11</div>
+        <div class="question-text">A key advantage of emission taxes over direct standards is that taxes:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_10" value="a"><span class="option-key">A</span> Always result in lower pollution than standards</label>
+          <label class="option-label"><input type="radio" name="q16_10" value="b"><span class="option-key">B</span> Allow the government to collect revenue without any market distortion</label>
+          <label class="option-label"><input type="radio" name="q16_10" value="c"><span class="option-key">C</span> Achieve emission targets at lower total cost by letting firms with cheap abatement reduce more</label>
+          <label class="option-label"><input type="radio" name="q16_10" value="d"><span class="option-key">D</span> Eliminate all negative externalities in the market</label>
+        </div>
+        <div class="feedback" id="fb16_10"></div>
+      </div>
+
+      <div class="question-block" data-q="11">
+        <div class="question-num">Question 12</div>
+        <div class="question-text">For a public good, the social demand curve is derived by:</div>
+        <div class="options">
+          <label class="option-label"><input type="radio" name="q16_11" value="a"><span class="option-key">A</span> Horizontally summing individual demand curves (as with private goods)</label>
+          <label class="option-label"><input type="radio" name="q16_11" value="b"><span class="option-key">B</span> Vertically summing individual willingness-to-pay curves</label>
+          <label class="option-label"><input type="radio" name="q16_11" value="c"><span class="option-key">C</span> Averaging individual demand curves</label>
+          <label class="option-label"><input type="radio" name="q16_11" value="d"><span class="option-key">D</span> Setting demand equal to marginal cost</label>
+        </div>
+        <div class="feedback" id="fb16_11"></div>
+      </div>
+
+      <div class="quiz-controls">
+        <button class="btn btn-primary" onclick="submitQuiz('16')">Submit Quiz</button>
+        <button class="btn btn-outline" onclick="resetQuiz('16')">Reset</button>
+      </div>
+      <div class="result-banner" id="result16">
+        <div><div class="result-score">Score: <span id="score16-num"></span> / 12</div><div class="result-msg" id="result16-msg"></div></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
